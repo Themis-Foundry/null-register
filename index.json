@@ -138,6 +138,43 @@
       "diagram": "entries/02-five-signals/diagram.svg",
       "reproduce": "entries/02-five-signals/reproduce.sh",
       "make_diagram": "entries/02-five-signals/make_diagram.py"
+    },
+    {
+      "id": "03-copy-trading",
+      "title": "Entry 03 \u2014 The leaderboard ranks account size",
+      "summary": "A public leaderboard of 43,141 crypto traders, and a control that shows its top performers are mostly just its biggest wallets.",
+      "path": "entries/03-copy-trading/",
+      "readme": "entries/03-copy-trading/README.md",
+      "verify": "entries/03-copy-trading/verify.py",
+      "data": [
+        {
+          "name": "q28s_events.jsonl",
+          "path": "entries/03-copy-trading/data/q28s_events.jsonl",
+          "bytes": 17368550,
+          "sha256": "5e8232cdafcd8a52280c58cefad7a77c02553eeacc42a3ac13968e7247f75acf"
+        },
+        {
+          "name": "q28_board_size_control.json",
+          "path": "entries/03-copy-trading/data/summaries/q28_board_size_control.json",
+          "bytes": 2006,
+          "sha256": "06dc5c02dcdcb8142d86b767c28ed1170f33c5ddc94835a9f437e6a937d7619c"
+        },
+        {
+          "name": "q28_persistence.json",
+          "path": "entries/03-copy-trading/data/summaries/q28_persistence.json",
+          "bytes": 5260,
+          "sha256": "86f95fb48132e03514149dd709e13828939197f733491026450dc85aee3b942b"
+        },
+        {
+          "name": "q29_slippage_n32.json",
+          "path": "entries/03-copy-trading/data/summaries/q29_slippage_n32.json",
+          "bytes": 82997,
+          "sha256": "df8336fc36e06e5c6fe571a6878dcbf31ae561394da65e7e5ec9b4a8c6a8263e"
+        }
+      ],
+      "diagram": "entries/03-copy-trading/diagram.svg",
+      "reproduce": "entries/03-copy-trading/reproduce.sh",
+      "make_diagram": "entries/03-copy-trading/make_diagram.py"
     }
   ],
   "corrections": {

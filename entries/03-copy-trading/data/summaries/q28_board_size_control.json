@@ -1,0 +1,77 @@
+{
+  "question": "Q28-side",
+  "run_on": "2026-08-31",
+  "NOT_the_registered_test": "Q28 registered a +30d read, first honest on 2026-09-20. This is a 9-day read across two snapshots and answers a different question: what does the ranking actually rank?",
+  "snapshots": {
+    "early": {
+      "day": "2026-08-21",
+      "fetched_at": "2026-08-21T15:47:10+00:00",
+      "rows": 43141
+    },
+    "late": {
+      "day": "2026-08-30",
+      "fetched_at": "2026-08-30T17:00:34+00:00",
+      "rows": 44381
+    }
+  },
+  "board": {
+    "rows": 43141,
+    "unique_addresses": 43141,
+    "alltime_positive": 21439,
+    "alltime_negative": 21158,
+    "above_100k": 10119,
+    "no_volume_that_month": 26632
+  },
+  "churn_9d": {
+    "survived": 42850,
+    "left": 291,
+    "new": 1531,
+    "leavers_pct_profitable": 75.6,
+    "stayers_pct_profitable": 49.5
+  },
+  "one_question_eight_answers": {
+    "dollars, ranked": {
+      "nested_month_vs_week": 0.833,
+      "subtracted_prior_vs_week": -0.511
+    },
+    "dollars, raw": {
+      "nested_month_vs_week": 0.699,
+      "subtracted_prior_vs_week": -0.885
+    },
+    "percent, ranked": {
+      "nested_month_vs_week": 0.811,
+      "subtracted_prior_vs_week": -0.523
+    },
+    "percent, raw": {
+      "nested_month_vs_week": -0.0,
+      "subtracted_prior_vs_week": -0.002
+    }
+  },
+  "baseline_next_period": {
+    "n": 42850,
+    "pct_positive_next": 52.8,
+    "median_roi_next_pct": 0.0,
+    "median_account_usd": 1018.39
+  },
+  "decile_sorts": {
+    "by_dollar_pnl_last_week": {
+      "n": 4285,
+      "pct_positive_next": 88.6,
+      "median_roi_next_pct": 3.56,
+      "median_account_usd": 870640.03
+    },
+    "by_percent_roi_last_week": {
+      "n": 4285,
+      "pct_positive_next": 64.5,
+      "median_roi_next_pct": 3.76,
+      "median_account_usd": 108008.37
+    },
+    "by_account_size_ONLY": {
+      "n": 4285,
+      "pct_positive_next": 83.8,
+      "median_roi_next_pct": 3.36,
+      "median_account_usd": 1201081.97
+    }
+  },
+  "size_overlap_pct": 72.9
+}

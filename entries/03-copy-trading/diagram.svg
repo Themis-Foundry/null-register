@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 560" width="940" height="560" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<defs><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#111c33"/><stop offset="1" stop-color="#0a1120"/></linearGradient><radialGradient id="glow" cx="0.22" cy="0.3" r="0.9"><stop offset="0" stop-color="#1b2a4a" stop-opacity="0.7"/><stop offset="1" stop-color="#0a1120" stop-opacity="0"/></radialGradient></defs>
+<rect width="940" height="560" fill="url(#panel)"/>
+<rect width="940" height="560" fill="url(#glow)"/>
+<text x="64" y="70" fill="#6f86ab" font-size="13" letter-spacing="3.4">PROFITABLE NINE DAYS LATER &#183; TOP DECILE BY EACH RANKING</text>
+<text x="64" y="114" fill="#eaf1fb" font-size="22" font-weight="600">A ranking that knows nothing gets within 4.8 points of the real one.</text>
+<text x="64" y="152" fill="#8fa3c4" font-size="16">The same wallets, the same nine days. Only the sort changes.<tspan x="64" dy="22">Sorting by how much money a wallet holds is not a skill measure, and it barely matters.</tspan></text>
+<line x1="604.3" y1="216" x2="604.3" y2="468" stroke="#41547d" stroke-width="1.5" stroke-dasharray="4 4"/>
+<text x="604.3" y="208" fill="#5d7299" font-size="11" text-anchor="middle">base rate 52.8%</text>
+<text x="356" y="254" fill="#dbe6f6" font-size="15" font-weight="600" text-anchor="end">Ranked by last week's dollars</text>
+<text x="356" y="272" fill="#6d82a6" font-size="12" text-anchor="end">what a leaderboard shows you &#183; median account $870,640</text>
+<rect x="372" y="239" width="389.8" height="22" rx="2" fill="#2f9e8f" opacity="0.92"/>
+<text x="773.8" y="255" fill="#c7d6ec" font-size="14">88.6%</text>
+<text x="356" y="316" fill="#dbe6f6" font-size="15" font-weight="700" text-anchor="end">Ranked by ACCOUNT SIZE alone</text>
+<text x="356" y="334" fill="#6d82a6" font-size="12" text-anchor="end">contains no performance information &#183; median account $1,201,082</text>
+<rect x="372" y="301" width="368.8" height="22" rx="2" fill="#c98a2e" opacity="0.92"/>
+<text x="752.8" y="317" fill="#c7d6ec" font-size="14">83.8%</text>
+<text x="356" y="378" fill="#dbe6f6" font-size="15" font-weight="600" text-anchor="end">Ranked by last week's percent</text>
+<text x="356" y="396" fill="#6d82a6" font-size="12" text-anchor="end">size-neutral &#183; median account $108,008</text>
+<rect x="372" y="363" width="283.7" height="22" rx="2" fill="#2f9e8f" opacity="0.92"/>
+<text x="667.7" y="379" fill="#c7d6ec" font-size="14">64.5%</text>
+<text x="356" y="440" fill="#dbe6f6" font-size="15" font-weight="600" text-anchor="end">Everyone on the board</text>
+<text x="356" y="458" fill="#6d82a6" font-size="12" text-anchor="end">the base rate &#183; median account $1,018</text>
+<rect x="372" y="425" width="232.3" height="22" rx="2" fill="#42557d" opacity="0.92"/>
+<text x="616.3" y="441" fill="#c7d6ec" font-size="14">52.8%</text>
+<text x="64" y="536" fill="#5d7299" font-size="12">42,850 wallets present in both snapshots, 2026-08-21 and 2026-08-30. Recomputed from data/ by make_diagram.py.</text>
+</svg>

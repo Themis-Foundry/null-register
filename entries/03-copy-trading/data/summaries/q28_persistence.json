@@ -1,0 +1,194 @@
+{
+  "summary": {
+    "window": "2026-08-07 \u2192 2026-08-21",
+    "days": 14,
+    "wallets_in": 32,
+    "wallets_measured": 25,
+    "excluded": {
+      "could_not_look": 3,
+      "no_fills_both_halves": 4
+    },
+    "spearman_early_vs_late": 0.194,
+    "top_half_positive_late": "8/12",
+    "bottom_half_positive_late": "8/13",
+    "median_late_pnl_top_half": 236048.48,
+    "median_late_pnl_bottom_half": 101008.03
+  },
+  "rows": [
+    {
+      "addr": "0xde8d9e530b0528ffa7b1190f862536c055dd9524",
+      "n_early": 75,
+      "n_late": 2568,
+      "pnl_early": -235.675228,
+      "pnl_late": 1263422.0384419996
+    },
+    {
+      "addr": "0x020ca66c30bec2c4fe3861a94e4db4a498a35872",
+      "n_early": 1381,
+      "n_late": 2910,
+      "pnl_early": -106541.1346069999,
+      "pnl_late": -866.8869919999818
+    },
+    {
+      "addr": "0x856c35038594767646266bc7fd68dc26480e910d",
+      "n_early": 1696,
+      "n_late": 3168,
+      "pnl_early": -5917.518228999992,
+      "pnl_late": -38532.93603600005
+    },
+    {
+      "addr": "0x9c6a5b4662c722d2c47f43d6c9813cb080ffa4ed",
+      "n_early": 2,
+      "n_late": 2000,
+      "pnl_early": -4.0214430000000005,
+      "pnl_late": 469892.08346499957
+    },
+    {
+      "addr": "0xec4a6f59960fb55a7fa49262e2628687b322cf62",
+      "n_early": 5942,
+      "n_late": 2388,
+      "pnl_early": -490891.87100200285,
+      "pnl_late": 2860379.0126359826
+    },
+    {
+      "addr": "0x152e41f0b83e6cad4b5dc730c1d6279b7d67c9dc",
+      "n_early": 3587,
+      "n_late": 373,
+      "pnl_early": -604417.9201659992,
+      "pnl_late": -843.2962289999998
+    },
+    {
+      "addr": "0xf02d16a272a842f8bac1d9a9e773aba1933454c6",
+      "n_early": 462,
+      "n_late": 3460,
+      "pnl_early": 9077.362612469984,
+      "pnl_late": -257043.49761635985
+    },
+    {
+      "addr": "0x8f78cb4c11dd66b99b2172b4c1ae05843bde87e7",
+      "n_early": 1034,
+      "n_late": 170,
+      "pnl_early": 7584.995726999996,
+      "pnl_late": -393.3910990000001
+    },
+    {
+      "addr": "0xb5b3f3caf9d778b1293e5cd29f32e84b04c67a08",
+      "n_early": 2033,
+      "n_late": 3999,
+      "pnl_early": -4345.006373000014,
+      "pnl_late": -420690.9027899996
+    },
+    {
+      "addr": "0xa9b95f2a2e7ef219021efc5c04c32761b8553bbd",
+      "n_early": 639,
+      "n_late": 2159,
+      "pnl_early": 192154.2793540003,
+      "pnl_late": -1260642.2604098748
+    },
+    {
+      "addr": "0xc179e03922afe8fa9533d3f896338b9fb87ce0c8",
+      "n_early": 1225,
+      "n_late": 1368,
+      "pnl_early": 201667.05165100048,
+      "pnl_late": 1313642.1134099977
+    },
+    {
+      "addr": "0x92b75a5bfb7be7911747276ad335b8f5da3ce0f4",
+      "n_early": 16,
+      "n_late": 1248,
+      "pnl_early": -228.33317399999999,
+      "pnl_late": 5204818.027796006
+    },
+    {
+      "addr": "0x4c6d679eac539bf7c5a0b7ebd8949ae93b1e5ee9",
+      "n_early": 3922,
+      "n_late": 1209,
+      "pnl_early": 81211.5420387495,
+      "pnl_late": 218792.21206437956
+    },
+    {
+      "addr": "0x8607a7d180de23645db594d90621d837749408d5",
+      "n_early": 767,
+      "n_late": 878,
+      "pnl_early": -27923.47548341006,
+      "pnl_late": 101008.03224049986
+    },
+    {
+      "addr": "0x9bbb821a51d9c0ef24dd8592e9caad7fc469bbf2",
+      "n_early": 1553,
+      "n_late": 1591,
+      "pnl_early": 180067.12319300006,
+      "pnl_late": 44395.54027799994
+    },
+    {
+      "addr": "0x091159a8106b077c13e89bc09701117e8b5f129a",
+      "n_early": 1086,
+      "n_late": 2286,
+      "pnl_early": 406978.92354900006,
+      "pnl_late": 309514.3433580015
+    },
+    {
+      "addr": "0x9ffdf919da72213588f7517598394cc5535bce40",
+      "n_early": 1844,
+      "n_late": 3987,
+      "pnl_early": -12178.85782800015,
+      "pnl_late": -597965.7521459989
+    },
+    {
+      "addr": "0x72774e2fe1992d5da8c6e9cef73fd2ab980c0b98",
+      "n_early": 4571,
+      "n_late": 6463,
+      "pnl_early": 236915.06872147968,
+      "pnl_late": 310983.30443899997
+    },
+    {
+      "addr": "0xb7e0b9fbc9479330d70bcc82a7d4325a20e8d1aa",
+      "n_early": 2332,
+      "n_late": 4132,
+      "pnl_early": 192654.5607770009,
+      "pnl_late": 1585966.3338440042
+    },
+    {
+      "addr": "0x8af700ba841f30e0a3fcb0ee4c4a9d223e1efa05",
+      "n_early": 1162,
+      "n_late": 2000,
+      "pnl_early": -536192.3362939986,
+      "pnl_late": 169262.10667900008
+    },
+    {
+      "addr": "0x77375a8c9d13bf79afb2a87f1b0ac1dfd5f5bf66",
+      "n_early": 4291,
+      "n_late": 2092,
+      "pnl_early": 65059.99260299998,
+      "pnl_late": -424034.15092799976
+    },
+    {
+      "addr": "0x0ad9e656d9e6211d0ea1c5462342e1fc94cc4cbf",
+      "n_early": 2540,
+      "n_late": 4206,
+      "pnl_early": 762989.1104190013,
+      "pnl_late": 253304.75223400025
+    },
+    {
+      "addr": "0xf517639a8872e756ac98d3c65507d2ebc25cc032",
+      "n_early": 3838,
+      "n_late": 5986,
+      "pnl_early": 21317.89885599982,
+      "pnl_late": 310953.2507115015
+    },
+    {
+      "addr": "0x795cfd1b03eafc11c4ec958b8a94cfc9aa64a242",
+      "n_early": 585,
+      "n_late": 3666,
+      "pnl_early": -1503.1012390000012,
+      "pnl_late": 1025667.4959268562
+    },
+    {
+      "addr": "0x051c2e6d49cf82ebc47f08f9b85800f94fc9693c",
+      "n_early": 1557,
+      "n_late": 1235,
+      "pnl_early": -46103.00707500004,
+      "pnl_late": 26163.12547577008
+    }
+  ]
+}

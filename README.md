@@ -54,6 +54,22 @@ nothing about the strategy changed.
 
 Every study ships the rows it scored, including the ones it threw out and why.
 
+### [03 — The leaderboard ranks account size](entries/03-copy-trading/)
+
+*43,141 crypto traders ranked in public, and a control that shows the ranking is mostly
+wallet size.*
+
+Take the top tenth of a public trading leaderboard by last week's profit and **88.6% are
+profitable again nine days later**, against a **52.8%** base rate. That is the number a
+copy-trading product would advertise.
+
+**Then rank by account size alone, which contains no performance information at all, and
+you get 83.8%.** The two rankings pick 72.9% of the same wallets, and the median account
+in the "best traders" decile is $870,640 against $1,018 for the board.
+
+Also here: the same question answered eight defensible ways, giving everything from
+**+0.83 to −0.89**, disagreeing about the sign.
+
 ---
 
 ## How this is checked
@@ -77,6 +93,8 @@ Two entries verify in two different ways, and the difference is deliberate:
 | what the evidence is | a sentence in a filing | a computation over thousands of events |
 | so what ships | the quote and its source URL | the per-event rows, and the code |
 | what is withheld | the harvester and classifier | the licensed price bars |
+
+Entry 03 follows Entry 02: the rows ship, and so does the code.
 
 **When the evidence is a sentence, hand over the sentence. When the evidence is a
 computation, the computation is the evidence.** A summary statistic with nothing
