@@ -1,0 +1,72 @@
+{
+  "question": "Q8",
+  "run_on": "2026-08-31",
+  "K_declared": 1,
+  "descriptive": true,
+  "direction_registered": null,
+  "size_conditioning": "COULD-NOT-LOOK \u2014 neither feed records announced amount; rows are {ticker, cik, filing_date} only",
+  "n_events": 9470,
+  "mean_ar": -0.0012672800856841468,
+  "median_ar": -0.00904050701466419,
+  "sd": 0.18005570297902435,
+  "win_rate_vs_spy": 0.47381203801478355,
+  "pct": {
+    "p10": -0.1921840141549348,
+    "p25": -0.0973762220119837,
+    "p75": 0.08387150763704043,
+    "p90": 0.18628470067400937
+  },
+  "mean_ci95_bootstrap": [
+    -0.004846172551279082,
+    0.0022237295242837126
+  ],
+  "placebo": {
+    "n_runs": 40,
+    "mean": -0.000607622705974816,
+    "max": 0.006091773396497324,
+    "min": -0.005533445163991585,
+    "excess_vs_placebo": -0.0006596573797093308,
+    "p_empirical": 0.725,
+    "seed": 21000808
+  },
+  "split_half": {
+    "2016-2020": {
+      "n": 4321,
+      "mean_ar": 0.0038694179843862873
+    },
+    "2021-2026": {
+      "n": 5149,
+      "mean_ar": -0.005577956403566133
+    }
+  },
+  "survivorship_and_exclusions": {
+    "rows_total": 13694,
+    "tickers_total": 2009,
+    "tickers_no_bars": 119,
+    "events_no_outcome_coverage": 372,
+    "events_cooldown_skipped": 3538
+  },
+  "identity_break_exclusions": [
+    {
+      "ticker": "TGNA",
+      "filing": "2017-05-09",
+      "ar": -0.8442041614257354,
+      "break_day": "2017-06-01",
+      "day_factor": 0.21552022122364328
+    },
+    {
+      "ticker": "CNX",
+      "filing": "2017-10-31",
+      "ar": -0.9960887752122863,
+      "break_day": "2017-11-29",
+      "day_factor": 0.10442450495049505
+    },
+    {
+      "ticker": "CBL",
+      "filing": "2021-10-18",
+      "ar": 337.068456835931,
+      "break_day": "2021-11-02",
+      "day_factor": 335.6913183279743
+    }
+  ]
+}

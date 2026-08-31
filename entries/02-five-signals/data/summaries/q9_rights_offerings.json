@@ -1,0 +1,204 @@
+{
+  "question": "Q9",
+  "run_on": "2026-08-31",
+  "K_declared": 1,
+  "direction_registered": "underperform into the event, partial reversion after",
+  "note_on_post_horizon": "post leg uses the shared rig's 60-tday hold (t+1..t+60), a superset of the registered t+40 \u2014 stated, and the 40-tday cooldown is per registration",
+  "n_events": 3144,
+  "pre_leg": {
+    "mean": 0.04411497131670101,
+    "median": -0.003453868497099666,
+    "ci95": [
+      0.0318482648128658,
+      0.05819655793490642
+    ]
+  },
+  "post_leg": {
+    "mean": -0.036375495870703545,
+    "median": -0.07545649476854627,
+    "ci95": [
+      -0.05935946658587538,
+      -0.010720510673009033
+    ]
+  },
+  "placebo": {
+    "n_runs": 40,
+    "pre_mean": -0.004676978229278987,
+    "post_mean": -0.021200169422940267,
+    "post_p": 0.9,
+    "seed": 21000908
+  },
+  "cost_assumption_round_trip": 0.015,
+  "split_half": {
+    "2016-2020": {
+      "n": 1449,
+      "pre": 0.056841322135936456,
+      "post": 0.06649680091774086
+    },
+    "2021-2026": {
+      "n": 1695,
+      "pre": 0.03323563070485902,
+      "post": -0.12431765401020557
+    }
+  },
+  "identity_break_exclusions": [
+    {
+      "ticker": "SLS",
+      "filing": "2016-07-08",
+      "break_day": "2016-06-29",
+      "day_factor": 0.1724137931034483
+    },
+    {
+      "ticker": "AMPE",
+      "filing": "2018-08-08",
+      "break_day": "2018-08-08",
+      "day_factor": 0.21286713286713285
+    },
+    {
+      "ticker": "AEMD",
+      "filing": "2021-06-11",
+      "break_day": "2021-06-09",
+      "day_factor": 4.882352941176471
+    },
+    {
+      "ticker": "CRBP",
+      "filing": "2020-08-07",
+      "break_day": "2020-09-08",
+      "day_factor": 0.2410810810810811
+    },
+    {
+      "ticker": "IDXG",
+      "filing": "2016-12-21",
+      "break_day": "2016-12-08",
+      "day_factor": 4.04
+    },
+    {
+      "ticker": "AVTX",
+      "filing": "2023-05-04",
+      "break_day": "2023-06-26",
+      "day_factor": 0.11312217194570136
+    },
+    {
+      "ticker": "PULM",
+      "filing": "2019-02-11",
+      "break_day": "2019-02-06",
+      "day_factor": 10.3424178895877
+    },
+    {
+      "ticker": "CRIS",
+      "filing": "2020-12-09",
+      "break_day": "2020-12-08",
+      "day_factor": 4.548611111111111
+    },
+    {
+      "ticker": "WATT",
+      "filing": "2024-12-31",
+      "break_day": "2024-12-30",
+      "day_factor": 6.54320987654321
+    },
+    {
+      "ticker": "MBIO",
+      "filing": "2024-06-21",
+      "break_day": "2024-06-17",
+      "day_factor": 5.769230769230769
+    },
+    {
+      "ticker": "SRRK",
+      "filing": "2024-10-07",
+      "break_day": "2024-10-07",
+      "day_factor": 4.619946091644205
+    },
+    {
+      "ticker": "SGBX",
+      "filing": "2020-04-01",
+      "break_day": "2020-03-31",
+      "day_factor": 4.5145570779163915
+    },
+    {
+      "ticker": "EMMA",
+      "filing": "2019-05-24",
+      "break_day": "2019-07-18",
+      "day_factor": 8.376068376068377
+    },
+    {
+      "ticker": "BACK",
+      "filing": "2020-04-03",
+      "break_day": "2020-03-24",
+      "day_factor": 11.25
+    },
+    {
+      "ticker": "EQ",
+      "filing": "2020-07-14",
+      "break_day": "2020-07-13",
+      "day_factor": 8.307210031347962
+    },
+    {
+      "ticker": "SPI",
+      "filing": "2020-10-01",
+      "break_day": "2020-09-23",
+      "day_factor": 13.365155131264915
+    },
+    {
+      "ticker": "KTRA",
+      "filing": "2023-09-19",
+      "break_day": "2023-10-31",
+      "day_factor": 0.20319148936170214
+    },
+    {
+      "ticker": "EJH",
+      "filing": "2024-07-09",
+      "break_day": "2024-08-13",
+      "day_factor": 0.11450381679389313
+    },
+    {
+      "ticker": "EZGO",
+      "filing": "2023-09-11",
+      "break_day": "2023-09-06",
+      "day_factor": 0.17045454545454544
+    },
+    {
+      "ticker": "PRFX",
+      "filing": "2023-07-14",
+      "break_day": "2023-07-11",
+      "day_factor": 4.074074074074074
+    },
+    {
+      "ticker": "CLEU",
+      "filing": "2024-12-23",
+      "break_day": "2025-01-30",
+      "day_factor": 0.019129032258064515
+    },
+    {
+      "ticker": "VINC",
+      "filing": "2024-03-29",
+      "break_day": "2024-04-09",
+      "day_factor": 0.2217573221757322
+    },
+    {
+      "ticker": "AZTR",
+      "filing": "2024-07-25",
+      "break_day": "2024-07-24",
+      "day_factor": 0.23540785498489425
+    },
+    {
+      "ticker": "ANTE",
+      "filing": "2024-06-27",
+      "break_day": "2024-08-06",
+      "day_factor": 0.18539748953974894
+    },
+    {
+      "ticker": "LITM",
+      "filing": "2024-12-19",
+      "break_day": "2024-12-18",
+      "day_factor": 4.476670870113494
+    }
+  ],
+  "survivorship_and_exclusions": {
+    "rows_total": 5611,
+    "tickers_total": 1169,
+    "tickers_no_bars": 114,
+    "events_no_coverage": 279,
+    "events_cooldown_skipped": 1713,
+    "identity_break_excluded": 25
+  }
+}

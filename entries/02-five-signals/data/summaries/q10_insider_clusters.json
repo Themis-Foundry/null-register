@@ -1,0 +1,63 @@
+{
+  "question": "Q10",
+  "run_on": "2026-08-31",
+  "K_declared": 1,
+  "condition": ">= 3 distinct insiders / trailing 10 trading days; control = exactly 1 filing; entry NEXT bar after filing; hold 60 tdays vs SPY; cooldown 60 tdays per issuer (both buckets)",
+  "n_cluster": 6511,
+  "n_single": 17510,
+  "mean_ar_cluster": 0.018237462711932325,
+  "median_ar_cluster": -0.024142934884516132,
+  "mean_ar_single": 0.013065248641275043,
+  "median_ar_single": -0.019568183096329683,
+  "spread": 0.005172214070657282,
+  "spread_ci95_bootstrap": [
+    -0.02940954352539447,
+    0.030341918172191715
+  ],
+  "placebo": {
+    "n_runs": 40,
+    "mean": 0.022815762774865158,
+    "max": 0.255397103197214,
+    "min": -0.12518398786728355,
+    "p_empirical": 0.525,
+    "seed": 21001008
+  },
+  "terciles_trailing60": {
+    "beaten-down": {
+      "n_cluster": 2231,
+      "n_single": 5165,
+      "spread": -0.03748769330551519
+    },
+    "middle": {
+      "n_cluster": 1623,
+      "n_single": 5772,
+      "spread": 0.016494463618466258
+    },
+    "run-up": {
+      "n_cluster": 1717,
+      "n_single": 5677,
+      "spread": 0.029030341754452946
+    }
+  },
+  "split_half": {
+    "2016-2020": {
+      "n_cluster": 3777,
+      "n_single": 9940,
+      "spread": 0.006569877133246159
+    },
+    "2021-2024": {
+      "n_cluster": 2733,
+      "n_single": 7565,
+      "spread": 0.0013044277931968454
+    }
+  },
+  "survivorship_and_exclusions": {
+    "issuers_total": 8043,
+    "issuers_no_bars": 2431,
+    "events_no_outcome_coverage": 6175,
+    "events_mid_bucket_2insiders": 88354,
+    "events_cooldown_skipped": 260534,
+    "rows_total": 427004,
+    "rows_unparseable_or_no_ticker": 0
+  }
+}

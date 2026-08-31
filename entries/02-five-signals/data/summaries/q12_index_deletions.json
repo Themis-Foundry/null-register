@@ -1,0 +1,73 @@
+{
+  "question": "Q12",
+  "run_on": "2026-08-31",
+  "K_declared": 1,
+  "direction_registered": "underperform into the date, outperform after",
+  "n_events": 114,
+  "pre_leg": {
+    "n": 111,
+    "mean": -0.04248445838412244,
+    "median": -0.009524767670860967,
+    "ci95": [
+      -0.07289205355066271,
+      -0.015936137812727107
+    ]
+  },
+  "post_leg": {
+    "mean": 0.04669750541141169,
+    "median": -0.0202382483486111,
+    "ci95": [
+      -0.037423573108496415,
+      0.14201614140742053
+    ]
+  },
+  "placebo": {
+    "n_runs": 40,
+    "post_mean": -0.023082707446389013,
+    "p_empirical": 0.025,
+    "seed": 21001208
+  },
+  "by_reason": {
+    "acquisition": {
+      "n": 15,
+      "post_mean": -0.10767669694481384
+    },
+    "demotion": {
+      "n": 83,
+      "post_mean": 0.07602835984190752
+    },
+    "other/unstated": {
+      "n": 16,
+      "post_mean": 0.03926951276217601
+    }
+  },
+  "by_fate": {
+    "survived_window": {
+      "n": 104,
+      "post_mean": 0.04513515490161548
+    },
+    "delisted_in_window": {
+      "n": 10,
+      "post_mean": 0.06294595071329225
+    }
+  },
+  "split_half": {
+    "2016-2020": {
+      "n": 60,
+      "post_mean": 0.12425670801670678
+    },
+    "2021-2026": {
+      "n": 54,
+      "post_mean": -0.039479386372249514
+    }
+  },
+  "identity_break_exclusions": [],
+  "survivorship_and_exclusions": {
+    "removals_total": 227,
+    "no_bars": 83,
+    "no_coverage": 30,
+    "identity_break_excluded": 0,
+    "delisted_in_window": 10
+  },
+  "bias_note": "no_bars exclusions skew to delistings/acquisitions closed before the bars vendor's window; their absence, if anything, flatters the post-leg (dead names cannot revert). Count stated; direction of bias stated."
+}
