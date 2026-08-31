@@ -82,6 +82,22 @@ Two entries verify in two different ways, and the difference is deliberate:
 computation, the computation is the evidence.** A summary statistic with nothing
 underneath it is the exact kind of claim this register exists to refuse.
 
+## Reading this from a program
+
+`index.json` at the root lists every entry and every data file with its path, size
+and SHA-256. **Read that rather than hardcoding a path.** Entry 01 sat at the repo
+root until a second entry arrived and everything moved under `entries/`; anything
+wired to the old locations would have broken, and the next reorganisation should be
+a manifest change instead.
+
+```bash
+curl -s https://raw.githubusercontent.com/kylemillerbuilds/null-register/main/index.json
+```
+
+The hashes let a consumer tell a file that moved from a file that changed, and cache
+against the content rather than the URL. `reproduce.sh` regenerates the manifest and
+fails if it has drifted from the tree, so it cannot go stale quietly.
+
 ## Corrections
 
 **[CORRECTIONS.md](CORRECTIONS.md) — nine of them, numbered across the whole

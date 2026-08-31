@@ -1,0 +1,158 @@
+{
+  "schema": 1,
+  "register": "The Null Register",
+  "description": "Research that did not work, published with the same care as research that did.",
+  "repository": "https://github.com/kylemillerbuilds/null-register",
+  "license": "See LICENSE. Sources are public filings and public APIs.",
+  "note": "Paths are published here so consumers never hardcode them. Follow `path`; a restructure changes this file, not your code.",
+  "verify_all": "reproduce.sh",
+  "entries": [
+    {
+      "id": "01-oddlot-census",
+      "title": "The Null Register \u2014 Entry 01: the odd-lot census",
+      "summary": "119 SEC tender offers read one filing at a time, published with the 14 cases where the strategy did not work, and with the 91 qualifying offers this census does not reach.",
+      "path": "entries/01-oddlot-census/",
+      "readme": "entries/01-oddlot-census/README.md",
+      "verify": "entries/01-oddlot-census/verify.py",
+      "data": [
+        {
+          "name": "edgar_oddlot_offers_2016_2026.jsonl",
+          "path": "entries/01-oddlot-census/data/edgar_oddlot_offers_2016_2026.jsonl",
+          "bytes": 256662,
+          "sha256": "d38a060fc3cc97d7a77078b1a8760356281b1ddaf7b01728b8e7d2df2da031b7"
+        },
+        {
+          "name": "oddlot_census_119.csv",
+          "path": "entries/01-oddlot-census/data/oddlot_census_119.csv",
+          "bytes": 62573,
+          "sha256": "efcd4fcbb6484afafdf077a76c5ec3099ace519ec65fbe4dcba56f9c38a18301"
+        },
+        {
+          "name": "oddlot_census_119.json",
+          "path": "entries/01-oddlot-census/data/oddlot_census_119.json",
+          "bytes": 241863,
+          "sha256": "163822c8cee0c30044aa11289ebe69b452b74cf90eb16dfdb548be29f945f349"
+        }
+      ],
+      "diagram": "entries/01-oddlot-census/diagram.svg"
+    },
+    {
+      "id": "02-five-signals",
+      "title": "Entry 02 \u2014 Five signals everyone repeats, measured",
+      "summary": "Five things retail investors are told to trade, each measured against a placebo on the whole cohort rather than a chosen slice. One of them worked and then stopped. The other four were never there.",
+      "path": "entries/02-five-signals/",
+      "readme": "entries/02-five-signals/README.md",
+      "verify": "entries/02-five-signals/verify.py",
+      "data": [
+        {
+          "name": "buyback_events.jsonl",
+          "path": "entries/02-five-signals/data/cohorts/buyback_events.jsonl",
+          "bytes": 908501,
+          "sha256": "98450a0b5eabdc8bbef89e5a3657958b5d60e4647af0569698654601c933a9f8"
+        },
+        {
+          "name": "events_buyback_tail.jsonl",
+          "path": "entries/02-five-signals/data/cohorts/events_buyback_tail.jsonl",
+          "bytes": 73248,
+          "sha256": "7a56d036edf785b4a2eaef4bd17401a6b8c4e8c6d3228f8b5dd1b765881985ad"
+        },
+        {
+          "name": "events_rights.jsonl",
+          "path": "entries/02-five-signals/data/cohorts/events_rights.jsonl",
+          "bytes": 378118,
+          "sha256": "17366125f12985fbb0de3afaa58b893c433034b7a66831992f1ad7cd585030eb"
+        },
+        {
+          "name": "sp500_membership_changes.jsonl",
+          "path": "entries/02-five-signals/data/cohorts/sp500_membership_changes.jsonl",
+          "bytes": 137775,
+          "sha256": "2a903dc10a94ab440e43615e7d75c67a619a80955d719fe546fca107cb901a93"
+        },
+        {
+          "name": "q10_events.jsonl",
+          "path": "entries/02-five-signals/data/q10_events.jsonl",
+          "bytes": 4407052,
+          "sha256": "8660baabf58d7efd047d5d08b59a89817a20c1bb31c244e395ece44f43c5bdb0"
+        },
+        {
+          "name": "q11_btc_events.jsonl",
+          "path": "entries/02-five-signals/data/q11_btc_events.jsonl",
+          "bytes": 1821101,
+          "sha256": "61748b960688da807dc89287507407ed41478e24a7369b51904b958863b28766"
+        },
+        {
+          "name": "q11_eth_events.jsonl",
+          "path": "entries/02-five-signals/data/q11_eth_events.jsonl",
+          "bytes": 1761877,
+          "sha256": "c3262ffec67dbacf9bcf940ac18bc93c254a84c095fa17f78afb1e171583a0ba"
+        },
+        {
+          "name": "q12_events.jsonl",
+          "path": "entries/02-five-signals/data/q12_events.jsonl",
+          "bytes": 21573,
+          "sha256": "0fd7700ef53a0a81aab96562e579e038778967f35fc60a4014522453ff5b1c9b"
+        },
+        {
+          "name": "q8_events.jsonl",
+          "path": "entries/02-five-signals/data/q8_events.jsonl",
+          "bytes": 1174854,
+          "sha256": "aa998af2f9bd83932927579f2c77855dc707ad21551193ee8a556247fb0cfae7"
+        },
+        {
+          "name": "q9_events.jsonl",
+          "path": "entries/02-five-signals/data/q9_events.jsonl",
+          "bytes": 490808,
+          "sha256": "f7a36918ef6a9dad3f45366857e26b49c4e57e8194046661274af21d4cd5ef85"
+        },
+        {
+          "name": "q10_insider_clusters.json",
+          "path": "entries/02-five-signals/data/summaries/q10_insider_clusters.json",
+          "bytes": 1671,
+          "sha256": "25481c618502127d3e1dffb0dae4846bff474bc94db18d238f2bd12f8aa97e65"
+        },
+        {
+          "name": "q11_funding_extremes.json",
+          "path": "entries/02-five-signals/data/summaries/q11_funding_extremes.json",
+          "bytes": 5163,
+          "sha256": "e8889550722923bc4b4237b476d0f80c0c027cfd521000ee5d760184267362a2"
+        },
+        {
+          "name": "q12_index_deletions.json",
+          "path": "entries/02-five-signals/data/summaries/q12_index_deletions.json",
+          "bytes": 1712,
+          "sha256": "78e8396fff5bbe0a6de80987d79821c969067f3b880830d71b9c29f490f3df50"
+        },
+        {
+          "name": "q8_buyback_drift.json",
+          "path": "entries/02-five-signals/data/summaries/q8_buyback_drift.json",
+          "bytes": 1809,
+          "sha256": "765fe478cc5943730ec0236b52fdabe2b864ec081e00f189f8f4d97364707a5d"
+        },
+        {
+          "name": "q9_rights_offerings.json",
+          "path": "entries/02-five-signals/data/summaries/q9_rights_offerings.json",
+          "bytes": 4819,
+          "sha256": "4184cfe18f9821da2f4ea4992dc0371ef8005a20eb808d44b5c61852798b51d6"
+        }
+      ],
+      "diagram": "entries/02-five-signals/diagram.svg",
+      "reproduce": "entries/02-five-signals/reproduce.sh",
+      "make_diagram": "entries/02-five-signals/make_diagram.py"
+    }
+  ],
+  "corrections": {
+    "count": 9,
+    "path": "CORRECTIONS.md",
+    "titles": [
+      "The 60% base rate",
+      "The survivorship explanation",
+      "The Robin Energy arithmetic",
+      "The percentage column",
+      "Seven offers had no share count to begin with",
+      "Two offers were on the wrong side",
+      "The word \"complete\"",
+      "A finished number moved, because the data underneath it kept growing",
+      "A confidence interval that depended on the order the code ran"
+    ]
+  }
+}
