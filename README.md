@@ -91,7 +91,7 @@ wired to the old locations would have broken, and the next reorganisation should
 a manifest change instead.
 
 ```bash
-curl -s https://raw.githubusercontent.com/kylemillerbuilds/null-register/main/index.json
+curl -s https://raw.githubusercontent.com/Themis-Foundry/null-register/main/index.json
 ```
 
 The hashes let a consumer tell a file that moved from a file that changed, and cache

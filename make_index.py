@@ -77,7 +77,7 @@ def build():
         "register": "The Null Register",
         "description": "Research that did not work, published with the same care "
                        "as research that did.",
-        "repository": "https://github.com/kylemillerbuilds/null-register",
+        "repository": "https://github.com/Themis-Foundry/null-register",
         "license": "See LICENSE. Sources are public filings and public APIs.",
         "note": "Paths are published here so consumers never hardcode them. "
                 "Follow `path`; a restructure changes this file, not your code.",
