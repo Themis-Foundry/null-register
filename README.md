@@ -1,11 +1,46 @@
 # The Null Register — Entry 01: the odd-lot census
 
-**A complete count of one small stock-market strategy, published with the 14 cases where
-it did not work.**
+**119 SEC tender offers read one filing at a time, published with the 14 cases where the
+strategy did not work, and with the 91 qualifying offers this census does not reach.**
+
+---
+
+### If you have never heard of any of this, start here
+
+**What is it?** When a company wants to buy back its own shares, it sometimes makes a public
+offer: we will purchase this many shares, at this price, for the next few weeks. If more people
+say yes than the company asked for, everybody gets cut back proportionally. You offer 1,000
+shares, they buy 400, and you are stuck holding the rest.
+
+**Except for very small holders.** Most of these offers carry a clause: if you own fewer than
+100 shares, you get bought out in full, ahead of everyone else. That clause is real, it is
+written into the filings linked throughout this repo, and most investors have never heard of it.
+
+**So is there money in it?** Only when the offer is oversubscribed, which is the one thing that
+makes the clause worth anything. **This repo is a count of how often that actually happened, and
+the honest answer is a range so wide you should not trade on it.** If you came for a strategy,
+that is your answer. If you came to see what a count looks like when nobody is selling you
+anything, keep reading.
+
+**Why publish it at all?** Because the failures normally vanish. Everyone writes up the times a
+thing worked, so the record everyone reads is a highlight reel, and the same idea gets retried
+because nobody published the last five times it did not pay. Here the failures get the same
+space, the same evidence and the same links as the wins.
+
+---
 
 Almost every published figure on this strategy is a success rate quoted without a denominator.
-This is the denominator: every operating-company odd-lot tender offer filed with the SEC between
-2016-01-13 and 2025-07-10, and what the filings actually establish about each one.
+This is a denominator, stated honestly:
+
+- The EDGAR sweep found **372** tender offers carrying odd-lot language, 2016 to 2026.
+- **210** of those are operating-company offers that actually carry the preference. The rest
+  are closed-end funds tendering at net asset value, or offers with no odd-lot provision.
+- **This census covers 119 of the 210**, spanning 2016-01-13 to 2025-07-10.
+
+⚠ **It is not a complete count and the gap is not random.** The census was restricted to offers
+whose filer could be matched to a ticker with confidence, and **75 of the 91 left out
+failed exactly that check.** Identity is easier to establish for larger, more heavily traded
+companies, so this set probably skews toward bigger offers. Nothing here corrects for that.
 
 | | |
 |---|---:|
@@ -70,8 +105,9 @@ reproducible script: it lets you disagree with my classification while still che
 
 ## Corrections
 
-Six, in [CORRECTIONS.md](CORRECTIONS.md). Every one is an error this project made about its own
-data, including two rows that were published on the wrong side of a headline that was right.
+Seven, in [CORRECTIONS.md](CORRECTIONS.md). Every one is an error this project made about its own
+data, including two rows published on the wrong side of a headline that was right, and the word
+"complete" appearing in an earlier draft of this file.
 
 ## Files
 

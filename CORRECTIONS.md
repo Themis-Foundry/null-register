@@ -3,6 +3,20 @@
 Every entry here is an error this project made about its own data. They are published because a
 research record with no corrections in it is not a research record.
 
+## 7. The word "complete"
+
+Earlier drafts of this README and of the register page said this was *a complete count* and that
+it covered *every operating-company odd-lot tender offer* in the window. **Both were false.** The
+sweep found 372 such filings, 210 carry the preference, and this census covers 119.
+
+The 119 are the offers whose filer could be matched to a ticker with confidence, and 75 of the 91
+left out failed exactly that check. The correct description is a **verified-identity subset**, and
+the selection it introduces plausibly favours larger companies.
+
+It was caught before publication by someone reading the claim and asking whether a decade of full
+coverage was really in hand. It was not. **A project whose entire argument is that unverified
+figures should not be trusted had an unverified figure in its opening sentence.**
+
 ## 6. Two offers were on the wrong side
 
 **Alliance Data was published as a failure and is a success.** The census recorded 99,724 shares
