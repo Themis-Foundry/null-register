@@ -84,7 +84,7 @@ underneath it is the exact kind of claim this register exists to refuse.
 
 ## Corrections
 
-**[CORRECTIONS.md](CORRECTIONS.md) — eight of them, numbered across the whole
+**[CORRECTIONS.md](CORRECTIONS.md) — nine of them, numbered across the whole
 register.**
 
 They are the most important file here. Two published rows sat on the wrong side of a

@@ -3,6 +3,27 @@
 Every entry here is an error this project made about its own data. They are published because a
 research record with no corrections in it is not a research record.
 
+## 9. A confidence interval that depended on the order the code ran
+
+Entry 02's diagram and its verifier both bootstrap the same intervals from the same
+rows at the same fixed seed, and they disagreed. The era that worked read −2.0% to
++30.5% in one and −1.7% to +29.3% in the other.
+
+Neither was corrupt. Both drew from **one** random number generator seeded once at the
+start of the run, so each interval depended on how many draws had already happened
+before it. The diagram computes four other quantities first. The verifier computes
+this one first. Same seed, same data, different position in the stream, different
+answer.
+
+**An interval that changes depending on what the program did beforehand is not
+reproducible, and calling it a 95% interval is a stronger claim than the code was
+making.** Both now seed a separate generator per quantity, keyed to that quantity's
+own name, so any figure can be re-derived alone and matches the full run exactly.
+
+Caught before publication, by the verifier disagreeing with the picture. **Neither
+would have caught it alone**, which is the argument for having a checker that is not
+the thing it checks.
+
 ## 8. A finished number moved, because the data underneath it kept growing
 
 Entry 02's buyback study was run on 2026-08-18 and reported a placebo p of **0.700**.

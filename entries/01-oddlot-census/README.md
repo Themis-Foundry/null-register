@@ -29,6 +29,8 @@ space, the same evidence and the same links as the wins.
 
 ---
 
+![Every offer in filing order, 2016 to 2025, one mark each: 21 where the strategy paid, 14 where it paid nothing, 27 the filings never settle, 49 with no final filing, and 7 excluded](diagram.svg)
+
 Almost every published figure on this strategy is a success rate quoted without a denominator.
 This is a denominator, stated honestly:
 

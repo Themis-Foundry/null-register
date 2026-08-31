@@ -6,6 +6,8 @@ The other four were never there.**
 
 ---
 
+![Return against the market for each signal, with a 95% interval drawn. Four of the five bars have an interval crossing zero. The S&P deletion rebound is far to the right for 2016 to 2020 and to the left of zero for 2021 to 2026](diagram.svg)
+
 ### If none of these terms mean anything to you, start here
 
 Every one of these five is a rule of thumb you can find repeated in a thousand
@@ -39,14 +41,21 @@ the twenty trading days into the deletion date, against the market.
 
 **The rebound was real too, and then it went away.**
 
-| era | mean return after, vs SPY, 120 trading days |
-|---|---:|
-| 2016 to 2020 | **+12.4%** |
-| 2021 to 2026 | **−3.9%** |
+| era | mean return after, vs SPY, 120 trading days | 95% interval |
+|---|---:|---:|
+| 2016 to 2020 | **+12.4%** | −1.7% to +30.5% |
+| 2021 to 2026 | **−3.9%** | −10.4% to +2.5% |
 
 If you had run this from 2016 to 2020 you would have made about 12% a trade over the
 market. If you read about it in 2021 and ran it since, you lost about 4%. Same rule,
 same cohort construction, opposite answer, and nothing in the strategy changed.
+
+**Now look at the interval on the era that worked.** At 60 events it runs from −1.7%
+to +30.5%. The average is genuinely +12.4% and the range the data actually supports
+still contains zero. **This is the closest thing to a win in the whole register and it
+does not clear its own error bars.** That is why the diagram at the top draws the
+whiskers rather than the averages: four of the five intervals cross zero, and the only
+one that clears zero is negative.
 
 Two things worth knowing before you take even that much:
 
@@ -227,6 +236,7 @@ data/summaries/             the study artifacts, which verify.py checks the rows
 data/cohorts/               the event lists these were built from, all public filings
 instruments/                the exact code that produced every row above
 verify.py                   recomputes every figure, and can be made to fail
+make_diagram.py             redraws diagram.svg from the rows above, deterministically
 ```
 
 Every study was registered with its direction and its bar stated in advance, and every

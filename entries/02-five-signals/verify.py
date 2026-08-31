@@ -99,6 +99,21 @@ def q12(rs=None):
                               ("2021-2026", "2021", "2027", -3.9)):
         h = [r["post"] for r in sc if lo <= r["date"][:4] < hi]
         check(f"  {lbl} after, mean %", pct(statistics.mean(h)), want)
+    # Same convention as make_diagram.py: one RNG per quantity, seeded from its
+    # own label. A shared stream makes an interval depend on how many draws came
+    # before it, so this check and that file disagreed by more than a point until
+    # both were pinned this way.
+    import random
+    for lbl, key, lo, hi, w_lo, w_hi in (
+            ("2016-2020", "q12_early", "2016", "2021", -1.7, 30.5),
+            ("2021-2026", "q12_late", "2021", "2027", -10.4, 2.5)):
+        h = [r["post"] for r in sc if lo <= r["date"][:4] < hi]
+        rng = random.Random(f"20260831:{key}")
+        b = sorted(statistics.mean(rng.choices(h, k=len(h))) for _ in range(4000))
+        check(f"  {lbl} 95% interval low %", pct(b[100]), w_lo)
+        check(f"  {lbl} 95% interval high %", pct(b[3900]), w_hi)
+    print(f"  {DIM}the era that worked has an interval containing zero. It is the "
+          f"closest thing to a win here and it does not clear its own error bars{OFF}")
     for reason, want_n, want_m in (("demotion", 83, 7.6), ("acquisition", 15, -10.8)):
         h = [r["post"] for r in sc if r["reason_class"] == reason]
         check(f"  by reason: {reason} n", len(h), want_n)

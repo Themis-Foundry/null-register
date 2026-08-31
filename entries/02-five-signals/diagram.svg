@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 560" width="940" height="560" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<defs><linearGradient id="panel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#111c33"/><stop offset="1" stop-color="#0a1120"/></linearGradient><radialGradient id="glow" cx="0.22" cy="0.3" r="0.9"><stop offset="0" stop-color="#1b2a4a" stop-opacity="0.7"/><stop offset="1" stop-color="#0a1120" stop-opacity="0"/></radialGradient></defs>
+<rect width="940" height="560" fill="url(#panel)"/>
+<rect width="940" height="560" fill="url(#glow)"/>
+<text x="64" y="70" fill="#6f86ab" font-size="13" letter-spacing="3.4">RETURN VS THE MARKET, WITH THE UNCERTAINTY DRAWN</text>
+<text x="64" y="114" fill="#eaf1fb" font-size="26" font-weight="600">Four intervals cross zero. The fifth points the wrong way.</text>
+<text x="64" y="152" fill="#8fa3c4" font-size="16">The bar is the average. The whisker is the range the data actually supports.<tspan x="64" dy="22">A whisker touching the line means the signal has not shown it does anything at all.</tspan><tspan x="64" dy="22">The rebound that paid +12.4% is also the widest bar here, and that is the point.</tspan></text>
+<line x1="581.0" y1="218" x2="581.0" y2="506" stroke="#41547d" stroke-width="1.5"/>
+<text x="334.2" y="208" fill="#5d7299" font-size="11" text-anchor="middle">-30%</text>
+<text x="416.5" y="208" fill="#5d7299" font-size="11" text-anchor="middle">-20%</text>
+<text x="498.7" y="208" fill="#5d7299" font-size="11" text-anchor="middle">-10%</text>
+<text x="581.0" y="208" fill="#5d7299" font-size="11" text-anchor="middle">+0%</text>
+<text x="663.3" y="208" fill="#5d7299" font-size="11" text-anchor="middle">+10%</text>
+<text x="745.5" y="208" fill="#5d7299" font-size="11" text-anchor="middle">+20%</text>
+<text x="827.8" y="208" fill="#5d7299" font-size="11" text-anchor="middle">+30%</text>
+<text x="284" y="252" fill="#dbe6f6" font-size="15" font-weight="600" text-anchor="end">S&P deletions, 2016-2020</text>
+<text x="284" y="270" fill="#6d82a6" font-size="12" text-anchor="end">the rebound, while it lasted &#183; n=60</text>
+<rect x="581.0" y="239" width="102.2" height="18" rx="2" fill="#42557d" opacity="0.92"/>
+<line x1="567.4" y1="248" x2="831.9" y2="248" stroke="#8fa3c4" stroke-width="1.6"/>
+<line x1="567.4" y1="242" x2="567.4" y2="254" stroke="#8fa3c4" stroke-width="1.6"/>
+<line x1="831.9" y1="242" x2="831.9" y2="254" stroke="#8fa3c4" stroke-width="1.6"/>
+<text x="843.9" y="253" fill="#c7d6ec" font-size="14" text-anchor="start">+12.4%</text>
+<text x="567.4" y="274" fill="#55688f" font-size="10.5" text-anchor="start">-1.7 to +30.5</text>
+<text x="284" y="310" fill="#dbe6f6" font-size="15" font-weight="600" text-anchor="end">S&P deletions, 2021-2026</text>
+<text x="284" y="328" fill="#6d82a6" font-size="12" text-anchor="end">the same rule, five years later &#183; n=54</text>
+<rect x="548.5" y="297" width="32.5" height="18" rx="2" fill="#42557d" opacity="0.92"/>
+<line x1="495.7" y1="306" x2="601.3" y2="306" stroke="#8fa3c4" stroke-width="1.6"/>
+<line x1="495.7" y1="300" x2="495.7" y2="312" stroke="#8fa3c4" stroke-width="1.6"/>
+<line x1="601.3" y1="300" x2="601.3" y2="312" stroke="#8fa3c4" stroke-width="1.6"/>
+<text x="483.7" y="311" fill="#c7d6ec" font-size="14" text-anchor="end">-3.9%</text>
+<text x="495.7" y="332" fill="#55688f" font-size="10.5" text-anchor="start">-10.4 to +2.5</text>
+<text x="284" y="368" fill="#dbe6f6" font-size="15" font-weight="600" text-anchor="end">Insider clusters</text>
+<text x="284" y="386" fill="#6d82a6" font-size="12" text-anchor="end">three insiders beat one, supposedly &#183; n=24,021</text>
+<rect x="581.0" y="355" width="4.3" height="18" rx="2" fill="#42557d" opacity="0.92"/>
+<line x1="559.3" y1="364" x2="605.9" y2="364" stroke="#8fa3c4" stroke-width="1.6"/>
+<line x1="559.3" y1="358" x2="559.3" y2="370" stroke="#8fa3c4" stroke-width="1.6"/>
+<line x1="605.9" y1="358" x2="605.9" y2="370" stroke="#8fa3c4" stroke-width="1.6"/>
+<text x="617.9" y="369" fill="#c7d6ec" font-size="14" text-anchor="start">+0.5%</text>
+<text x="559.3" y="390" fill="#55688f" font-size="10.5" text-anchor="start">-2.6 to +3.0</text>
+<text x="284" y="426" fill="#dbe6f6" font-size="15" font-weight="600" text-anchor="end">Buyback announcements</text>
+<text x="284" y="444" fill="#6d82a6" font-size="12" text-anchor="end">buy when the company buys &#183; n=9,470</text>
+<rect x="580.0" y="413" width="2.0" height="18" rx="2" fill="#42557d" opacity="0.92"/>
+<line x1="577.0" y1="422" x2="582.9" y2="422" stroke="#8fa3c4" stroke-width="1.6"/>
+<line x1="577.0" y1="416" x2="577.0" y2="428" stroke="#8fa3c4" stroke-width="1.6"/>
+<line x1="582.9" y1="416" x2="582.9" y2="428" stroke="#8fa3c4" stroke-width="1.6"/>
+<text x="565.0" y="427" fill="#c7d6ec" font-size="14" text-anchor="end">-0.1%</text>
+<text x="577.0" y="448" fill="#55688f" font-size="10.5" text-anchor="start">-0.5 to +0.2</text>
+<text x="284" y="484" fill="#dbe6f6" font-size="15" font-weight="600" text-anchor="end">Rights offerings</text>
+<text x="284" y="502" fill="#6d82a6" font-size="12" text-anchor="end">the dilution dip, after &#183; n=3,144</text>
+<rect x="551.1" y="471" width="29.9" height="18" rx="2" fill="#c98a2e" opacity="0.92"/>
+<line x1="532.5" y1="480" x2="572.9" y2="480" stroke="#8fa3c4" stroke-width="1.6"/>
+<line x1="532.5" y1="474" x2="532.5" y2="486" stroke="#8fa3c4" stroke-width="1.6"/>
+<line x1="572.9" y1="474" x2="572.9" y2="486" stroke="#8fa3c4" stroke-width="1.6"/>
+<text x="520.5" y="485" fill="#c7d6ec" font-size="14" text-anchor="end">-3.6%</text>
+<text x="532.5" y="506" fill="#55688f" font-size="10.5" text-anchor="start">-5.9 to -1.0</text>
+<text x="64" y="536" fill="#5d7299" font-size="12">Bootstrapped from the rows in data/, 4,000 resamples at a fixed seed. Regenerate with make_diagram.py and diff the file.</text>
+</svg>
