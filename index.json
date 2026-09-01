@@ -178,7 +178,7 @@
     }
   ],
   "corrections": {
-    "count": 9,
+    "count": 10,
     "path": "CORRECTIONS.md",
     "titles": [
       "The 60% base rate",
@@ -189,7 +189,8 @@
       "Two offers were on the wrong side",
       "The word \"complete\"",
       "A finished number moved, because the data underneath it kept growing",
-      "A confidence interval that depended on the order the code ran"
+      "A confidence interval that depended on the order the code ran",
+      "\"It worked\" was a claim the data did not support"
     ]
   }
 }

@@ -48,9 +48,10 @@ dropped from the S&P 500. Fade extreme funding rates. Sell into a rights offerin
 a spread whose confidence interval straddles zero, and moving every event to a random
 date in the same stocks produces a *larger* edge than the real dates do.
 
-**One worked, and then stopped.** Buying S&P 500 deletions returned **+12.4%** a trade
-from 2016 to 2020 and **−3.9%** from 2021 to 2026. Same rule, opposite answer, and
-nothing about the strategy changed.
+**One changed its behaviour.** Buying S&P 500 deletions returned **+12.4%** a trade from
+2016 to 2020 and **−3.9%** from 2021 to 2026. Neither era clears zero on its own, and the
+**gap between them does**, which is a different and more careful claim than the one this
+page made first.
 
 Every study ships the rows it scored, including the ones it threw out and why.
 
@@ -118,7 +119,7 @@ fails if it has drifted from the tree, so it cannot go stale quietly.
 
 ## Corrections
 
-**[CORRECTIONS.md](CORRECTIONS.md) — nine of them, numbered across the whole
+**[CORRECTIONS.md](CORRECTIONS.md) — ten of them, numbered across the whole
 register.**
 
 They are the most important file here. Two published rows sat on the wrong side of a

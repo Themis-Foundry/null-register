@@ -29,6 +29,7 @@ earned.
 
 import json
 import pathlib
+import random
 import statistics
 import sys
 
@@ -112,6 +113,17 @@ def q12(rs=None):
         b = sorted(statistics.mean(rng.choices(h, k=len(h))) for _ in range(4000))
         check(f"  {lbl} 95% interval low %", pct(b[100]), w_lo)
         check(f"  {lbl} 95% interval high %", pct(b[3900]), w_hi)
+    early = [r["post"] for r in sc if r["date"][:4] < "2021"]
+    later = [r["post"] for r in sc if r["date"][:4] >= "2021"]
+    gap = statistics.mean(early) - statistics.mean(later)
+    rng = random.Random("20260831:q12_era_gap")
+    b = sorted(statistics.mean(rng.choices(early, k=len(early)))
+               - statistics.mean(rng.choices(later, k=len(later))) for _ in range(4000))
+    check("  era gap %", pct(gap), 16.4)
+    check("  era gap 95% low %", pct(b[100]), 0.4)
+    check("  era gap 95% high %", pct(b[3900]), 35.4)
+    print(f"  {DIM}neither era clears zero alone. The GAP does, by 0.4 points, which is "
+          f"the whole claim and the thinnest result here{OFF}")
     print(f"  {DIM}the era that worked has an interval containing zero. It is the "
           f"closest thing to a win here and it does not clear its own error bars{OFF}")
     for reason, want_n, want_m in (("demotion", 83, 7.6), ("acquisition", 15, -10.8)):

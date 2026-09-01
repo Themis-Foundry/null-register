@@ -3,6 +3,33 @@
 Every entry here is an error this project made about its own data. They are published because a
 research record with no corrections in it is not a research record.
 
+## 10. "It worked" was a claim the data did not support
+
+Entry 02 called the S&P deletion rebound **the one that worked, and then stopped**, on a mean of
++12.4% from 2016 to 2020 against −3.9% from 2021 to 2026. The page disclosed that the first era's
+interval runs from −1.7% to +30.5% and contains zero, and then went on calling it a win anyway.
+
+**An external audit caught it.** Its argument was simple and correct: a mean whose interval
+contains zero is not distinguishable from zero, so "it worked" is not available, and what was left
+looked like a story told over noise.
+
+Half right, and the other half needed a number neither side had computed. **The gap between the
+eras is +16.4%, with a 95% interval of +0.4% to +35.4% that excludes zero**, and 97.7% of
+resamples put the earlier era ahead. So the eras do differ. What cannot be claimed is that either
+one was profitable.
+
+The entry now makes a difference claim instead of a level claim, which is what the pre-registered
+test was measuring in the first place: whether the effect repeats out of sample. It did not.
+
+⚠ **That interval clears zero by 0.4 points**, which is the thinnest result in this register and
+is labelled as such on the page. One more quiet year either way moves it.
+
+**The auditor's other headline finding was wrong**, and it is recorded here because a correction
+file that only carries our own errors would be a strange kind of record. It reported that Q10's
+"the placebo beats the real dates" is inverted, having read `mean_ar_single` (+1.31%) as the
+placebo. The placebo is a separate 40-run computation whose mean spread is +2.28% against the real
+spread of +0.52%. The claim stands.
+
 ## 9. A confidence interval that depended on the order the code ran
 
 Entry 02's diagram and its verifier both bootstrap the same intervals from the same

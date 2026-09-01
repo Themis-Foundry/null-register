@@ -28,7 +28,7 @@ times, and asks whether the real dates did anything the random ones did not.
 
 ---
 
-## The one that worked, and then stopped
+## The one whose behaviour changed
 
 ### Q12 — buying S&P 500 deletions
 
@@ -50,12 +50,18 @@ If you had run this from 2016 to 2020 you would have made about 12% a trade over
 market. If you read about it in 2021 and ran it since, you lost about 4%. Same rule,
 same cohort construction, opposite answer, and nothing in the strategy changed.
 
-**Now look at the interval on the era that worked.** At 60 events it runs from −1.7%
-to +30.5%. The average is genuinely +12.4% and the range the data actually supports
-still contains zero. **This is the closest thing to a win in the whole register and it
-does not clear its own error bars.** That is why the diagram at the top draws the
-whiskers rather than the averages: four of the five intervals cross zero, and the only
-one that clears zero is negative.
+**Read the intervals before the averages, because they change the claim.** Neither era
+is distinguishable from zero on its own: 2016 to 2020 runs from −1.7% to +30.5%, and 2021
+to 2026 from −10.4% to +2.5%. **So "it worked" is not a claim this data supports**, and an
+earlier version of this page made it anyway.
+
+**What the data does support is that the two eras differ.** The gap between them is
+**+16.4%**, with a 95% interval of **+0.4% to +35.4%** that excludes zero, and 97.7% of
+resamples put the earlier era ahead. That is the finding: not that the strategy paid, but
+that whatever it was doing in the first era it stopped doing in the second.
+
+⚠ **That interval clears zero by 0.4 points.** It is the thinnest result in this register
+and one more quiet year either way would move it. Treated as suggestive, not settled.
 
 Two things worth knowing before you take even that much:
 
