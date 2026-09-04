@@ -96,9 +96,9 @@ so this is a measured fact without an explanation attached, which is how it is l
 ## The other thing worth saying about "43,141 traders"
 
 **26,511 of them, 61.9%, did no trading at all in the month measured.** Their volume is
-zero. Across the whole board, 49.5% show an all-time profit and 10,050 sit above
-$100,000, but a headcount that is mostly dormant accounts is not a population of traders,
-and any base rate computed over it inherits that.
+zero. Across the whole board, 49.5% show an all-time profit, and 10,050 of those profits
+exceed $100,000. That is profit, not account balance. A headcount that is mostly dormant
+accounts is not a population of traders, and any base rate computed over it inherits that.
 
 ## How to check this without trusting me
 
