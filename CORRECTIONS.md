@@ -3,6 +3,24 @@
 Every entry here is an error this project made about its own data. They are published because a
 research record with no corrections in it is not a research record.
 
+## The flip log
+
+Ten reversals, newest first. Each one leaves the original claim standing next to what replaced it.
+`reproduce.sh` counts these headings and fails if the front page says a different number.
+
+| # | entry | what was published | what stands now |
+|---|---|---|---|
+| 10 | 02 | the S&P deletion rebound *worked, then stopped* | neither era clears zero; the eras differ (+16.4%, interval +0.4% to +35.4%, the thinnest result here) |
+| 9 | 02 | one 95% interval, two different values | each figure now seeds its own generator, so any one can be re-derived alone |
+| 8 | 02 | buyback placebo p = 0.700 | 0.725; one placebo run crossed because the price history grew under a finished study |
+| 7 | 01 | *a complete count* of every qualifying offer | a verified-identity subset: 372 filings, 210 with the preference, 119 reached |
+| 6 | 01 | Alliance Data a failure, Cannae a success | the reverse of both; the headline count never moved while two rows under it were wrong |
+| 5 | 01 | a shares-sought figure on every offer | seven dollar-denominated auctions state no share count; the column is empty for them |
+| 4 | 01 | each result as a percentage of shares sought | column removed; the denominator is not sound and the filing outranks the arithmetic |
+| 3 | 01 | an audit called one row impossible | the audit was wrong; it tested a mislabelled quantity while auditing for that mistake |
+| 2 | 01 | 28 missing outcomes explained as survivorship | accounted for one by one: nineteen were never candidates |
+| 1 | 01 | ~60% of resolved odd-lot tenders oversubscribed | a 44-point band; the denominator was the wrong population |
+
 ## 10. "It worked" was a claim the data did not support
 
 Entry 02 called the S&P deletion rebound **the one that worked, and then stopped**, on a mean of

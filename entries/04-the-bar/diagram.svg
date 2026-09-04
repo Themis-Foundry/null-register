@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 400" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0f172a"/><stop offset="1" stop-color="#111827"/></linearGradient></defs>
+<rect width="940" height="400" fill="url(#bg)"/>
+<text x="60" y="52" fill="#94a3b8" font-size="13" letter-spacing="3">FORTY STRATEGIES WITH NO SIGNAL · ONE PROMOTION BAR · ONE REAL STRATEGY</text>
+<text x="60" y="98" fill="#f8fafc" font-size="30" font-weight="700">39 of 40 guessed their way over the bar</text>
+<text x="60" y="126" fill="#cbd5e1" font-size="15">Each dot is the same trend rule run on a one-week-scrambled market. Profit per trade after costs, in units of the amount risked.</text>
+<line x1="70" y1="260" x2="900" y2="260" stroke="#334155" stroke-width="1.5"/>
+<line x1="70.0" y1="260" x2="70.0" y2="266" stroke="#475569"/>
+<text x="70.0" y="284" fill="#94a3b8" font-size="12" text-anchor="middle">0</text>
+<line x1="236.0" y1="260" x2="236.0" y2="266" stroke="#475569"/>
+<text x="236.0" y="284" fill="#94a3b8" font-size="12" text-anchor="middle">+0.07R</text>
+<line x1="307.1" y1="260" x2="307.1" y2="266" stroke="#475569"/>
+<text x="307.1" y="284" fill="#94a3b8" font-size="12" text-anchor="middle">+0.10R</text>
+<line x1="544.3" y1="260" x2="544.3" y2="266" stroke="#475569"/>
+<text x="544.3" y="284" fill="#94a3b8" font-size="12" text-anchor="middle">+0.20R</text>
+<line x1="781.4" y1="260" x2="781.4" y2="266" stroke="#475569"/>
+<text x="781.4" y="284" fill="#94a3b8" font-size="12" text-anchor="middle">+0.30R</text>
+<line x1="236.0" y1="150" x2="236.0" y2="260" stroke="#f59e0b" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="244.0" y="164" fill="#f59e0b" font-size="13" font-weight="600">the bar, +0.07R</text>
+<circle cx="235.8" cy="242" r="6.5" fill="#64748b" opacity="0.92"/>
+<circle cx="245.2" cy="226" r="6.5" fill="#34d399" opacity="0.92"/>
+<circle cx="278.9" cy="242" r="6.5" fill="#34d399" opacity="0.92"/>
+<circle cx="322.3" cy="242" r="6.5" fill="#34d399" opacity="0.92"/>
+<circle cx="337.0" cy="242" r="6.5" fill="#34d399" opacity="0.92"/>
+<circle cx="345.3" cy="226" r="6.5" fill="#34d399" opacity="0.92"/>
+<circle cx="367.1" cy="242" r="6.5" fill="#34d399" opacity="0.92"/>
+<circle cx="370.9" cy="226" r="6.5" fill="#34d399" opacity="0.92"/>
+<circle cx="389.7" cy="242" r="6.5" fill="#34d399" opacity="0.92"/>
+<circle cx="395.4" cy="226" r="6.5" fill="#34d399" opacity="0.92"/>
+<circle cx="400.3" cy="210" r="6.5" fill="#34d399" opacity="0.92"/>
+<circle cx="403.4" cy="194" r="6.5" fill="#34d399" opacity="0.92"/>
+<circle cx="404.8" cy="242" r="6.5" fill="#34d399" opacity="0.92"/>
+<circle cx="405.3" cy="178" r="6.5" fill="#34d399" opacity="0.92"/>
+<circle cx="406.7" cy="162" r="6.5" fill="#34d399" opacity="0.92"/>
+<circle cx="412.9" cy="226" r="6.5" fill="#34d399" opacity="0.92"/>
+<circle cx="426.7" cy="242" r="6.5" fill="#34d399" opacity="0.92"/>
+<circle cx="428.6" cy="226" r="6.5" fill="#34d399" opacity="0.92"/>
+<circle cx="433.1" cy="210" r="6.5" fill="#34d399" opacity="0.92"/>
+<circle cx="442.1" cy="242" r="6.5" fill="#34d399" opacity="0.92"/>
+<circle cx="456.8" cy="242" r="6.5" fill="#34d399" opacity="0.92"/>
+<circle cx="466.3" cy="226" r="6.5" fill="#34d399" opacity="0.92"/>
+<circle cx="467.2" cy="210" r="6.5" fill="#34d399" opacity="0.92"/>
+<circle cx="499.9" cy="242" r="6.5" fill="#34d399" opacity="0.92"/>
+<circle cx="514.2" cy="242" r="6.5" fill="#34d399" opacity="0.92"/>
+<circle cx="519.4" cy="226" r="6.5" fill="#34d399" opacity="0.92"/>
+<circle cx="529.6" cy="242" r="6.5" fill="#34d399" opacity="0.92"/>
+<circle cx="531.2" cy="210" r="6.5" fill="#34d399" opacity="0.92"/>
+<circle cx="546.2" cy="242" r="6.5" fill="#34d399" opacity="0.92"/>
+<circle cx="554.5" cy="226" r="6.5" fill="#34d399" opacity="0.92"/>
+<circle cx="556.6" cy="210" r="6.5" fill="#34d399" opacity="0.92"/>
+<circle cx="564.0" cy="242" r="6.5" fill="#34d399" opacity="0.92"/>
+<circle cx="565.9" cy="194" r="6.5" fill="#34d399" opacity="0.92"/>
+<circle cx="566.3" cy="178" r="6.5" fill="#34d399" opacity="0.92"/>
+<circle cx="586.7" cy="242" r="6.5" fill="#34d399" opacity="0.92"/>
+<circle cx="587.0" cy="226" r="6.5" fill="#34d399" opacity="0.92"/>
+<circle cx="629.2" cy="242" r="6.5" fill="#34d399" opacity="0.92"/>
+<circle cx="678.3" cy="242" r="6.5" fill="#34d399" opacity="0.92"/>
+<circle cx="726.6" cy="242" r="6.5" fill="#34d399" opacity="0.92"/>
+<circle cx="790.9" cy="242" r="6.5" fill="#34d399" opacity="0.92"/>
+<line x1="534.6" y1="150" x2="534.6" y2="260" stroke="#f8fafc" stroke-width="2"/>
+<text x="534.6" y="142" fill="#f8fafc" font-size="13" font-weight="600" text-anchor="middle">the real strategy, +0.196R</text>
+<text x="534.6" y="306" fill="#fca5a5" font-size="13" text-anchor="middle">12 guessing strategies did better</text>
+<text x="790.9" y="306" fill="#34d399" font-size="13" text-anchor="middle">best guess, +0.304R</text>
+<circle cx="72" cy="366" r="6" fill="#34d399"/><text x="86" y="371" fill="#cbd5e1" font-size="13">cleared the bar with no signal</text>
+<circle cx="330" cy="366" r="6" fill="#64748b"/><text x="344" y="371" fill="#cbd5e1" font-size="13">did not</text>
+<text x="900" y="371" fill="#64748b" font-size="12" text-anchor="end">batch league-check-momentum · seed 8080 · 2026-08-08</text>
+</svg>

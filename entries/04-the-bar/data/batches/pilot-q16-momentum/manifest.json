@@ -1,0 +1,1179 @@
+{
+  "batch_id": "pilot-q16-momentum",
+  "declared_at": "2026-08-08T12:39:49",
+  "question": "Q16 \u2014 does the funnel tax hold in practice? (docs/QUESTIONS.md)",
+  "family": "momentum",
+  "K": 9,
+  "n_nulls": 20,
+  "null_generator": "block_bootstrap",
+  "seed": 20260808,
+  "r_stdev_assumed": 0.3209,
+  "promote_bar_R": 0.07,
+  "family_wise_alpha": 0.05,
+  "required_n": 136,
+  "notes": "THE PILOT. Its job is to test the MACHINE, not to find an edge, which is why it answers Q16 (the foundry auditing itself) rather than one of the market questions. The momentum family is the vehicle because it is the best-understood family in the repo and its R dispersion is the number the whole E1 table was derived from \u2014 so if the null cohort misbehaves here, it would misbehave everywhere. A survivor coming out of this batch should be treated as a curiosity, not a finding: the grids are deliberately small and the point of the run is the null column.",
+  "candidates": [
+    {
+      "id": "real-0000",
+      "kind": "real",
+      "family": "momentum",
+      "universe": "broad",
+      "tickers": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "DIA",
+        "VTI",
+        "XLF",
+        "XLK",
+        "XLE",
+        "XLV",
+        "XLY",
+        "XLI",
+        "XLU",
+        "XLP",
+        "XLB",
+        "SMH",
+        "SOXX",
+        "GLD",
+        "SLV",
+        "TLT",
+        "HYG",
+        "EEM",
+        "EFA"
+      ],
+      "grid": {
+        "fast": [
+          20,
+          50
+        ],
+        "slow": [
+          100,
+          200
+        ],
+        "stop_pct": [
+          0.08
+        ],
+        "slip_bps": [
+          5.0
+        ]
+      },
+      "grid_index": 0,
+      "grid_size": 4
+    },
+    {
+      "id": "real-0001",
+      "kind": "real",
+      "family": "momentum",
+      "universe": "broad",
+      "tickers": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "DIA",
+        "VTI",
+        "XLF",
+        "XLK",
+        "XLE",
+        "XLV",
+        "XLY",
+        "XLI",
+        "XLU",
+        "XLP",
+        "XLB",
+        "SMH",
+        "SOXX",
+        "GLD",
+        "SLV",
+        "TLT",
+        "HYG",
+        "EEM",
+        "EFA"
+      ],
+      "grid": {
+        "fast": [
+          10,
+          30
+        ],
+        "slow": [
+          50,
+          150
+        ],
+        "stop_pct": [
+          0.12
+        ],
+        "slip_bps": [
+          5.0
+        ]
+      },
+      "grid_index": 1,
+      "grid_size": 4
+    },
+    {
+      "id": "real-0002",
+      "kind": "real",
+      "family": "momentum",
+      "universe": "broad",
+      "tickers": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "DIA",
+        "VTI",
+        "XLF",
+        "XLK",
+        "XLE",
+        "XLV",
+        "XLY",
+        "XLI",
+        "XLU",
+        "XLP",
+        "XLB",
+        "SMH",
+        "SOXX",
+        "GLD",
+        "SLV",
+        "TLT",
+        "HYG",
+        "EEM",
+        "EFA"
+      ],
+      "grid": {
+        "fast": [
+          20,
+          50
+        ],
+        "slow": [
+          100,
+          200
+        ],
+        "stop_pct": [
+          0.08
+        ],
+        "slip_bps": [
+          15.0
+        ]
+      },
+      "grid_index": 2,
+      "grid_size": 4
+    },
+    {
+      "id": "real-0003",
+      "kind": "real",
+      "family": "momentum",
+      "universe": "core",
+      "tickers": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "DIA",
+        "VTI"
+      ],
+      "grid": {
+        "fast": [
+          20,
+          50
+        ],
+        "slow": [
+          100,
+          200
+        ],
+        "stop_pct": [
+          0.08
+        ],
+        "slip_bps": [
+          5.0
+        ]
+      },
+      "grid_index": 0,
+      "grid_size": 4
+    },
+    {
+      "id": "real-0004",
+      "kind": "real",
+      "family": "momentum",
+      "universe": "core",
+      "tickers": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "DIA",
+        "VTI"
+      ],
+      "grid": {
+        "fast": [
+          10,
+          30
+        ],
+        "slow": [
+          50,
+          150
+        ],
+        "stop_pct": [
+          0.12
+        ],
+        "slip_bps": [
+          5.0
+        ]
+      },
+      "grid_index": 1,
+      "grid_size": 4
+    },
+    {
+      "id": "real-0005",
+      "kind": "real",
+      "family": "momentum",
+      "universe": "core",
+      "tickers": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "DIA",
+        "VTI"
+      ],
+      "grid": {
+        "fast": [
+          20,
+          50
+        ],
+        "slow": [
+          100,
+          200
+        ],
+        "stop_pct": [
+          0.08
+        ],
+        "slip_bps": [
+          15.0
+        ]
+      },
+      "grid_index": 2,
+      "grid_size": 4
+    },
+    {
+      "id": "real-0006",
+      "kind": "real",
+      "family": "momentum",
+      "universe": "sectors",
+      "tickers": [
+        "XLF",
+        "XLK",
+        "XLE",
+        "XLV",
+        "XLY",
+        "XLI",
+        "XLU",
+        "XLP",
+        "XLB"
+      ],
+      "grid": {
+        "fast": [
+          20,
+          50
+        ],
+        "slow": [
+          100,
+          200
+        ],
+        "stop_pct": [
+          0.08
+        ],
+        "slip_bps": [
+          5.0
+        ]
+      },
+      "grid_index": 0,
+      "grid_size": 4
+    },
+    {
+      "id": "real-0007",
+      "kind": "real",
+      "family": "momentum",
+      "universe": "sectors",
+      "tickers": [
+        "XLF",
+        "XLK",
+        "XLE",
+        "XLV",
+        "XLY",
+        "XLI",
+        "XLU",
+        "XLP",
+        "XLB"
+      ],
+      "grid": {
+        "fast": [
+          10,
+          30
+        ],
+        "slow": [
+          50,
+          150
+        ],
+        "stop_pct": [
+          0.12
+        ],
+        "slip_bps": [
+          5.0
+        ]
+      },
+      "grid_index": 1,
+      "grid_size": 4
+    },
+    {
+      "id": "real-0008",
+      "kind": "real",
+      "family": "momentum",
+      "universe": "sectors",
+      "tickers": [
+        "XLF",
+        "XLK",
+        "XLE",
+        "XLV",
+        "XLY",
+        "XLI",
+        "XLU",
+        "XLP",
+        "XLB"
+      ],
+      "grid": {
+        "fast": [
+          20,
+          50
+        ],
+        "slow": [
+          100,
+          200
+        ],
+        "stop_pct": [
+          0.08
+        ],
+        "slip_bps": [
+          15.0
+        ]
+      },
+      "grid_index": 2,
+      "grid_size": 4
+    },
+    {
+      "id": "null-0000",
+      "kind": "null",
+      "family": "momentum",
+      "universe": "broad",
+      "tickers": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "DIA",
+        "VTI",
+        "XLF",
+        "XLK",
+        "XLE",
+        "XLV",
+        "XLY",
+        "XLI",
+        "XLU",
+        "XLP",
+        "XLB",
+        "SMH",
+        "SOXX",
+        "GLD",
+        "SLV",
+        "TLT",
+        "HYG",
+        "EEM",
+        "EFA"
+      ],
+      "grid": {
+        "fast": [
+          20,
+          50
+        ],
+        "slow": [
+          100,
+          200
+        ],
+        "stop_pct": [
+          0.08
+        ],
+        "slip_bps": [
+          5.0
+        ]
+      },
+      "grid_index": 0,
+      "grid_size": 4,
+      "null_generator": "block_bootstrap",
+      "null_seed": 20260808
+    },
+    {
+      "id": "null-0001",
+      "kind": "null",
+      "family": "momentum",
+      "universe": "broad",
+      "tickers": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "DIA",
+        "VTI",
+        "XLF",
+        "XLK",
+        "XLE",
+        "XLV",
+        "XLY",
+        "XLI",
+        "XLU",
+        "XLP",
+        "XLB",
+        "SMH",
+        "SOXX",
+        "GLD",
+        "SLV",
+        "TLT",
+        "HYG",
+        "EEM",
+        "EFA"
+      ],
+      "grid": {
+        "fast": [
+          10,
+          30
+        ],
+        "slow": [
+          50,
+          150
+        ],
+        "stop_pct": [
+          0.12
+        ],
+        "slip_bps": [
+          5.0
+        ]
+      },
+      "grid_index": 1,
+      "grid_size": 4,
+      "null_generator": "block_bootstrap",
+      "null_seed": 20260809
+    },
+    {
+      "id": "null-0002",
+      "kind": "null",
+      "family": "momentum",
+      "universe": "broad",
+      "tickers": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "DIA",
+        "VTI",
+        "XLF",
+        "XLK",
+        "XLE",
+        "XLV",
+        "XLY",
+        "XLI",
+        "XLU",
+        "XLP",
+        "XLB",
+        "SMH",
+        "SOXX",
+        "GLD",
+        "SLV",
+        "TLT",
+        "HYG",
+        "EEM",
+        "EFA"
+      ],
+      "grid": {
+        "fast": [
+          20,
+          50
+        ],
+        "slow": [
+          100,
+          200
+        ],
+        "stop_pct": [
+          0.08
+        ],
+        "slip_bps": [
+          15.0
+        ]
+      },
+      "grid_index": 2,
+      "grid_size": 4,
+      "null_generator": "block_bootstrap",
+      "null_seed": 20260810
+    },
+    {
+      "id": "null-0003",
+      "kind": "null",
+      "family": "momentum",
+      "universe": "core",
+      "tickers": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "DIA",
+        "VTI"
+      ],
+      "grid": {
+        "fast": [
+          20,
+          50
+        ],
+        "slow": [
+          100,
+          200
+        ],
+        "stop_pct": [
+          0.08
+        ],
+        "slip_bps": [
+          5.0
+        ]
+      },
+      "grid_index": 0,
+      "grid_size": 4,
+      "null_generator": "block_bootstrap",
+      "null_seed": 20260811
+    },
+    {
+      "id": "null-0004",
+      "kind": "null",
+      "family": "momentum",
+      "universe": "core",
+      "tickers": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "DIA",
+        "VTI"
+      ],
+      "grid": {
+        "fast": [
+          10,
+          30
+        ],
+        "slow": [
+          50,
+          150
+        ],
+        "stop_pct": [
+          0.12
+        ],
+        "slip_bps": [
+          5.0
+        ]
+      },
+      "grid_index": 1,
+      "grid_size": 4,
+      "null_generator": "block_bootstrap",
+      "null_seed": 20260812
+    },
+    {
+      "id": "null-0005",
+      "kind": "null",
+      "family": "momentum",
+      "universe": "core",
+      "tickers": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "DIA",
+        "VTI"
+      ],
+      "grid": {
+        "fast": [
+          20,
+          50
+        ],
+        "slow": [
+          100,
+          200
+        ],
+        "stop_pct": [
+          0.08
+        ],
+        "slip_bps": [
+          15.0
+        ]
+      },
+      "grid_index": 2,
+      "grid_size": 4,
+      "null_generator": "block_bootstrap",
+      "null_seed": 20260813
+    },
+    {
+      "id": "null-0006",
+      "kind": "null",
+      "family": "momentum",
+      "universe": "sectors",
+      "tickers": [
+        "XLF",
+        "XLK",
+        "XLE",
+        "XLV",
+        "XLY",
+        "XLI",
+        "XLU",
+        "XLP",
+        "XLB"
+      ],
+      "grid": {
+        "fast": [
+          20,
+          50
+        ],
+        "slow": [
+          100,
+          200
+        ],
+        "stop_pct": [
+          0.08
+        ],
+        "slip_bps": [
+          5.0
+        ]
+      },
+      "grid_index": 0,
+      "grid_size": 4,
+      "null_generator": "block_bootstrap",
+      "null_seed": 20260814
+    },
+    {
+      "id": "null-0007",
+      "kind": "null",
+      "family": "momentum",
+      "universe": "sectors",
+      "tickers": [
+        "XLF",
+        "XLK",
+        "XLE",
+        "XLV",
+        "XLY",
+        "XLI",
+        "XLU",
+        "XLP",
+        "XLB"
+      ],
+      "grid": {
+        "fast": [
+          10,
+          30
+        ],
+        "slow": [
+          50,
+          150
+        ],
+        "stop_pct": [
+          0.12
+        ],
+        "slip_bps": [
+          5.0
+        ]
+      },
+      "grid_index": 1,
+      "grid_size": 4,
+      "null_generator": "block_bootstrap",
+      "null_seed": 20260815
+    },
+    {
+      "id": "null-0008",
+      "kind": "null",
+      "family": "momentum",
+      "universe": "sectors",
+      "tickers": [
+        "XLF",
+        "XLK",
+        "XLE",
+        "XLV",
+        "XLY",
+        "XLI",
+        "XLU",
+        "XLP",
+        "XLB"
+      ],
+      "grid": {
+        "fast": [
+          20,
+          50
+        ],
+        "slow": [
+          100,
+          200
+        ],
+        "stop_pct": [
+          0.08
+        ],
+        "slip_bps": [
+          15.0
+        ]
+      },
+      "grid_index": 2,
+      "grid_size": 4,
+      "null_generator": "block_bootstrap",
+      "null_seed": 20260816
+    },
+    {
+      "id": "null-0009",
+      "kind": "null",
+      "family": "momentum",
+      "universe": "broad",
+      "tickers": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "DIA",
+        "VTI",
+        "XLF",
+        "XLK",
+        "XLE",
+        "XLV",
+        "XLY",
+        "XLI",
+        "XLU",
+        "XLP",
+        "XLB",
+        "SMH",
+        "SOXX",
+        "GLD",
+        "SLV",
+        "TLT",
+        "HYG",
+        "EEM",
+        "EFA"
+      ],
+      "grid": {
+        "fast": [
+          20,
+          50
+        ],
+        "slow": [
+          100,
+          200
+        ],
+        "stop_pct": [
+          0.08
+        ],
+        "slip_bps": [
+          5.0
+        ]
+      },
+      "grid_index": 0,
+      "grid_size": 4,
+      "null_generator": "block_bootstrap",
+      "null_seed": 20260817
+    },
+    {
+      "id": "null-0010",
+      "kind": "null",
+      "family": "momentum",
+      "universe": "broad",
+      "tickers": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "DIA",
+        "VTI",
+        "XLF",
+        "XLK",
+        "XLE",
+        "XLV",
+        "XLY",
+        "XLI",
+        "XLU",
+        "XLP",
+        "XLB",
+        "SMH",
+        "SOXX",
+        "GLD",
+        "SLV",
+        "TLT",
+        "HYG",
+        "EEM",
+        "EFA"
+      ],
+      "grid": {
+        "fast": [
+          10,
+          30
+        ],
+        "slow": [
+          50,
+          150
+        ],
+        "stop_pct": [
+          0.12
+        ],
+        "slip_bps": [
+          5.0
+        ]
+      },
+      "grid_index": 1,
+      "grid_size": 4,
+      "null_generator": "block_bootstrap",
+      "null_seed": 20260818
+    },
+    {
+      "id": "null-0011",
+      "kind": "null",
+      "family": "momentum",
+      "universe": "broad",
+      "tickers": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "DIA",
+        "VTI",
+        "XLF",
+        "XLK",
+        "XLE",
+        "XLV",
+        "XLY",
+        "XLI",
+        "XLU",
+        "XLP",
+        "XLB",
+        "SMH",
+        "SOXX",
+        "GLD",
+        "SLV",
+        "TLT",
+        "HYG",
+        "EEM",
+        "EFA"
+      ],
+      "grid": {
+        "fast": [
+          20,
+          50
+        ],
+        "slow": [
+          100,
+          200
+        ],
+        "stop_pct": [
+          0.08
+        ],
+        "slip_bps": [
+          15.0
+        ]
+      },
+      "grid_index": 2,
+      "grid_size": 4,
+      "null_generator": "block_bootstrap",
+      "null_seed": 20260819
+    },
+    {
+      "id": "null-0012",
+      "kind": "null",
+      "family": "momentum",
+      "universe": "core",
+      "tickers": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "DIA",
+        "VTI"
+      ],
+      "grid": {
+        "fast": [
+          20,
+          50
+        ],
+        "slow": [
+          100,
+          200
+        ],
+        "stop_pct": [
+          0.08
+        ],
+        "slip_bps": [
+          5.0
+        ]
+      },
+      "grid_index": 0,
+      "grid_size": 4,
+      "null_generator": "block_bootstrap",
+      "null_seed": 20260820
+    },
+    {
+      "id": "null-0013",
+      "kind": "null",
+      "family": "momentum",
+      "universe": "core",
+      "tickers": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "DIA",
+        "VTI"
+      ],
+      "grid": {
+        "fast": [
+          10,
+          30
+        ],
+        "slow": [
+          50,
+          150
+        ],
+        "stop_pct": [
+          0.12
+        ],
+        "slip_bps": [
+          5.0
+        ]
+      },
+      "grid_index": 1,
+      "grid_size": 4,
+      "null_generator": "block_bootstrap",
+      "null_seed": 20260821
+    },
+    {
+      "id": "null-0014",
+      "kind": "null",
+      "family": "momentum",
+      "universe": "core",
+      "tickers": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "DIA",
+        "VTI"
+      ],
+      "grid": {
+        "fast": [
+          20,
+          50
+        ],
+        "slow": [
+          100,
+          200
+        ],
+        "stop_pct": [
+          0.08
+        ],
+        "slip_bps": [
+          15.0
+        ]
+      },
+      "grid_index": 2,
+      "grid_size": 4,
+      "null_generator": "block_bootstrap",
+      "null_seed": 20260822
+    },
+    {
+      "id": "null-0015",
+      "kind": "null",
+      "family": "momentum",
+      "universe": "sectors",
+      "tickers": [
+        "XLF",
+        "XLK",
+        "XLE",
+        "XLV",
+        "XLY",
+        "XLI",
+        "XLU",
+        "XLP",
+        "XLB"
+      ],
+      "grid": {
+        "fast": [
+          20,
+          50
+        ],
+        "slow": [
+          100,
+          200
+        ],
+        "stop_pct": [
+          0.08
+        ],
+        "slip_bps": [
+          5.0
+        ]
+      },
+      "grid_index": 0,
+      "grid_size": 4,
+      "null_generator": "block_bootstrap",
+      "null_seed": 20260823
+    },
+    {
+      "id": "null-0016",
+      "kind": "null",
+      "family": "momentum",
+      "universe": "sectors",
+      "tickers": [
+        "XLF",
+        "XLK",
+        "XLE",
+        "XLV",
+        "XLY",
+        "XLI",
+        "XLU",
+        "XLP",
+        "XLB"
+      ],
+      "grid": {
+        "fast": [
+          10,
+          30
+        ],
+        "slow": [
+          50,
+          150
+        ],
+        "stop_pct": [
+          0.12
+        ],
+        "slip_bps": [
+          5.0
+        ]
+      },
+      "grid_index": 1,
+      "grid_size": 4,
+      "null_generator": "block_bootstrap",
+      "null_seed": 20260824
+    },
+    {
+      "id": "null-0017",
+      "kind": "null",
+      "family": "momentum",
+      "universe": "sectors",
+      "tickers": [
+        "XLF",
+        "XLK",
+        "XLE",
+        "XLV",
+        "XLY",
+        "XLI",
+        "XLU",
+        "XLP",
+        "XLB"
+      ],
+      "grid": {
+        "fast": [
+          20,
+          50
+        ],
+        "slow": [
+          100,
+          200
+        ],
+        "stop_pct": [
+          0.08
+        ],
+        "slip_bps": [
+          15.0
+        ]
+      },
+      "grid_index": 2,
+      "grid_size": 4,
+      "null_generator": "block_bootstrap",
+      "null_seed": 20260825
+    },
+    {
+      "id": "null-0018",
+      "kind": "null",
+      "family": "momentum",
+      "universe": "broad",
+      "tickers": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "DIA",
+        "VTI",
+        "XLF",
+        "XLK",
+        "XLE",
+        "XLV",
+        "XLY",
+        "XLI",
+        "XLU",
+        "XLP",
+        "XLB",
+        "SMH",
+        "SOXX",
+        "GLD",
+        "SLV",
+        "TLT",
+        "HYG",
+        "EEM",
+        "EFA"
+      ],
+      "grid": {
+        "fast": [
+          20,
+          50
+        ],
+        "slow": [
+          100,
+          200
+        ],
+        "stop_pct": [
+          0.08
+        ],
+        "slip_bps": [
+          5.0
+        ]
+      },
+      "grid_index": 0,
+      "grid_size": 4,
+      "null_generator": "block_bootstrap",
+      "null_seed": 20260826
+    },
+    {
+      "id": "null-0019",
+      "kind": "null",
+      "family": "momentum",
+      "universe": "broad",
+      "tickers": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "DIA",
+        "VTI",
+        "XLF",
+        "XLK",
+        "XLE",
+        "XLV",
+        "XLY",
+        "XLI",
+        "XLU",
+        "XLP",
+        "XLB",
+        "SMH",
+        "SOXX",
+        "GLD",
+        "SLV",
+        "TLT",
+        "HYG",
+        "EEM",
+        "EFA"
+      ],
+      "grid": {
+        "fast": [
+          10,
+          30
+        ],
+        "slow": [
+          50,
+          150
+        ],
+        "stop_pct": [
+          0.12
+        ],
+        "slip_bps": [
+          5.0
+        ]
+      },
+      "grid_index": 1,
+      "grid_size": 4,
+      "null_generator": "block_bootstrap",
+      "null_seed": 20260827
+    }
+  ]
+}

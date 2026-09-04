@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "register": "The Null Register",
-  "description": "Research that did not work, published with the same care as research that did.",
+  "description": "Things traders repeat, measured. Research that did not work, published with the same care as research that did.",
   "repository": "https://github.com/Themis-Foundry/null-register",
   "license": "See LICENSE. Sources are public filings and public APIs.",
   "note": "Paths are published here so consumers never hardcode them. Follow `path`; a restructure changes this file, not your code.",
@@ -175,6 +175,109 @@
       "diagram": "entries/03-copy-trading/diagram.svg",
       "reproduce": "entries/03-copy-trading/reproduce.sh",
       "make_diagram": "entries/03-copy-trading/make_diagram.py"
+    },
+    {
+      "id": "04-the-bar",
+      "title": "Entry 04 \u2014 The bar that random strategies cleared",
+      "summary": "Forty trend-following strategies with no signal in them were run against the bar this project used to promote a strategy. Thirty-nine cleared it. So did the strategy it had promoted, which twelve of the forty then beat.",
+      "path": "entries/04-the-bar/",
+      "readme": "entries/04-the-bar/README.md",
+      "verify": "entries/04-the-bar/verify.py",
+      "data": [
+        {
+          "name": "manifest.json",
+          "path": "entries/04-the-bar/data/batches/league-check-momentum/manifest.json",
+          "bytes": 37627,
+          "sha256": "05033ec4d9398769b1beb3ad909df7c56f42b95f626dc289cdb18f1ff7a92707"
+        },
+        {
+          "name": "results.jsonl",
+          "path": "entries/04-the-bar/data/batches/league-check-momentum/results.jsonl",
+          "bytes": 13574,
+          "sha256": "7d5a036128a993ab6eb7c350b11c474137317952afec7bc1feda88ff19394422"
+        },
+        {
+          "name": "verdict.md",
+          "path": "entries/04-the-bar/data/batches/league-check-momentum/verdict.md",
+          "bytes": 2447,
+          "sha256": "1cd56ea8fdd52d1b6029c397e74c5e8a394857f0c960952b81c2b59cf74540e4"
+        },
+        {
+          "name": "manifest.json",
+          "path": "entries/04-the-bar/data/batches/pilot-q16-momentum/manifest.json",
+          "bytes": 20106,
+          "sha256": "05fa37c207b4fe54d9beae344d947fba262532a3ead87014af909d9e06c9f99e"
+        },
+        {
+          "name": "results.jsonl",
+          "path": "entries/04-the-bar/data/batches/pilot-q16-momentum/results.jsonl",
+          "bytes": 9446,
+          "sha256": "b6eb635bceda2f19deddbe145e57263596b0f60a4e4589418567aacb67a89200"
+        },
+        {
+          "name": "verdict.md",
+          "path": "entries/04-the-bar/data/batches/pilot-q16-momentum/verdict.md",
+          "bytes": 2795,
+          "sha256": "f624ae12ef6b215f43085dc2f00154b4a6090290136abfe4fae4eab141e6e0d4"
+        },
+        {
+          "name": "manifest.json",
+          "path": "entries/04-the-bar/data/batches/q16-mean-reversion/manifest.json",
+          "bytes": 28530,
+          "sha256": "45ad8706bae45c1a263705e8210346066170fd2491ab6eea6c110c9596d05a94"
+        },
+        {
+          "name": "results.jsonl",
+          "path": "entries/04-the-bar/data/batches/q16-mean-reversion/results.jsonl",
+          "bytes": 11549,
+          "sha256": "8ff144bc23e669d738e79895ff02b6ecf9e3a753c16594bf4f63f579f9cd666b"
+        },
+        {
+          "name": "verdict.md",
+          "path": "entries/04-the-bar/data/batches/q16-mean-reversion/verdict.md",
+          "bytes": 3064,
+          "sha256": "fef1f61555d5531ec6d17d3b275c10cc344fa4d61c662457bfd717f5754d4179"
+        },
+        {
+          "name": "manifest.json",
+          "path": "entries/04-the-bar/data/batches/q16-mean-reversion-deep/manifest.json",
+          "bytes": 280923,
+          "sha256": "cfed96aa4484c6dc2d7450c01d8f51dbfd6e09471760af5c7e851556e38db1ed"
+        },
+        {
+          "name": "results.jsonl",
+          "path": "entries/04-the-bar/data/batches/q16-mean-reversion-deep/results.jsonl",
+          "bytes": 198589,
+          "sha256": "fd8e5f0eec47fae31eef786a9f3f5c72603b2b77441159e1e2627dc0c960b169"
+        },
+        {
+          "name": "verdict.md",
+          "path": "entries/04-the-bar/data/batches/q16-mean-reversion-deep/verdict.md",
+          "bytes": 2071,
+          "sha256": "ecf3cb996f0132672521107ad3f49cf03f4e10e02f5e70c1f37442c233054af1"
+        },
+        {
+          "name": "manifest.json",
+          "path": "entries/04-the-bar/data/batches/q16-momentum-deep/manifest.json",
+          "bytes": 207539,
+          "sha256": "e7e6ec80b17819bee8ca18c6ad567fa195b009e3a4ebb6a63bcffa6361a2853a"
+        },
+        {
+          "name": "results.jsonl",
+          "path": "entries/04-the-bar/data/batches/q16-momentum-deep/results.jsonl",
+          "bytes": 99702,
+          "sha256": "57e880defabb5e6a33bdad2445457d7d31400813af3939eadb3dfb427e2f1b14"
+        },
+        {
+          "name": "verdict.md",
+          "path": "entries/04-the-bar/data/batches/q16-momentum-deep/verdict.md",
+          "bytes": 2359,
+          "sha256": "e4fe4a037dd1a942394fd6e597eaf27a88a3acc29a26519897324d2737a6679c"
+        }
+      ],
+      "diagram": "entries/04-the-bar/diagram.svg",
+      "reproduce": "entries/04-the-bar/reproduce.sh",
+      "make_diagram": "entries/04-the-bar/make_diagram.py"
     }
   ],
   "corrections": {

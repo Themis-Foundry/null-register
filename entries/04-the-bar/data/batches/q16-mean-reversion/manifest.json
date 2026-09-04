@@ -1,0 +1,1667 @@
+{
+  "batch_id": "q16-mean-reversion",
+  "declared_at": "2026-08-08T14:00:33",
+  "question": "Q16 \u2014 does the drift-capture finding generalise to a SECOND family? (docs/QUESTIONS.md)",
+  "family": "mean_reversion",
+  "K": 6,
+  "n_nulls": 30,
+  "null_generator": "block_bootstrap",
+  "seed": 4242,
+  "r_stdev_assumed": 0.3209,
+  "promote_bar_R": 0.07,
+  "family_wise_alpha": 0.05,
+  "required_n": 121,
+  "notes": "The momentum finding (nulls mean +0.169R, 39/40 over the bar) was ONE family and one null generator. Mean-reversion is the natural second test: it holds positions briefly and trades both a regime filter and an oversold trigger, so it should capture LESS drift than a long-only trend rule. If its nulls also clear +0.07R routinely, the bar is broken for long-only equity generally, not just for trend. If they do not, the momentum result is about trend rules specifically. Either answer is worth having and neither is assumed.",
+  "candidates": [
+    {
+      "id": "real-0000",
+      "kind": "real",
+      "family": "mean_reversion",
+      "universe": "broad",
+      "tickers": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "DIA",
+        "VTI",
+        "XLF",
+        "XLK",
+        "XLE",
+        "XLV",
+        "XLY",
+        "XLI",
+        "XLU",
+        "XLP",
+        "XLB",
+        "XLRE",
+        "XLC",
+        "SMH",
+        "SOXX",
+        "GLD",
+        "SLV",
+        "TLT",
+        "HYG",
+        "EEM",
+        "EFA"
+      ],
+      "grid": {
+        "rsi_len": [
+          14
+        ],
+        "oversold": [
+          30.0
+        ],
+        "exit_rsi": [
+          50.0,
+          60.0
+        ],
+        "regime": [
+          200
+        ],
+        "stop_pct": [
+          0.1
+        ],
+        "max_hold": [
+          10,
+          20
+        ]
+      },
+      "grid_index": 0,
+      "grid_size": 4
+    },
+    {
+      "id": "real-0001",
+      "kind": "real",
+      "family": "mean_reversion",
+      "universe": "broad",
+      "tickers": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "DIA",
+        "VTI",
+        "XLF",
+        "XLK",
+        "XLE",
+        "XLV",
+        "XLY",
+        "XLI",
+        "XLU",
+        "XLP",
+        "XLB",
+        "XLRE",
+        "XLC",
+        "SMH",
+        "SOXX",
+        "GLD",
+        "SLV",
+        "TLT",
+        "HYG",
+        "EEM",
+        "EFA"
+      ],
+      "grid": {
+        "rsi_len": [
+          7
+        ],
+        "oversold": [
+          25.0,
+          35.0
+        ],
+        "exit_rsi": [
+          50.0
+        ],
+        "regime": [
+          100
+        ],
+        "stop_pct": [
+          0.15
+        ],
+        "max_hold": [
+          10
+        ]
+      },
+      "grid_index": 1,
+      "grid_size": 2
+    },
+    {
+      "id": "real-0002",
+      "kind": "real",
+      "family": "mean_reversion",
+      "universe": "core",
+      "tickers": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "DIA",
+        "VTI"
+      ],
+      "grid": {
+        "rsi_len": [
+          14
+        ],
+        "oversold": [
+          30.0
+        ],
+        "exit_rsi": [
+          50.0,
+          60.0
+        ],
+        "regime": [
+          200
+        ],
+        "stop_pct": [
+          0.1
+        ],
+        "max_hold": [
+          10,
+          20
+        ]
+      },
+      "grid_index": 0,
+      "grid_size": 4
+    },
+    {
+      "id": "real-0003",
+      "kind": "real",
+      "family": "mean_reversion",
+      "universe": "core",
+      "tickers": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "DIA",
+        "VTI"
+      ],
+      "grid": {
+        "rsi_len": [
+          7
+        ],
+        "oversold": [
+          25.0,
+          35.0
+        ],
+        "exit_rsi": [
+          50.0
+        ],
+        "regime": [
+          100
+        ],
+        "stop_pct": [
+          0.15
+        ],
+        "max_hold": [
+          10
+        ]
+      },
+      "grid_index": 1,
+      "grid_size": 2
+    },
+    {
+      "id": "real-0004",
+      "kind": "real",
+      "family": "mean_reversion",
+      "universe": "sectors",
+      "tickers": [
+        "XLF",
+        "XLK",
+        "XLE",
+        "XLV",
+        "XLY",
+        "XLI",
+        "XLU",
+        "XLP",
+        "XLB"
+      ],
+      "grid": {
+        "rsi_len": [
+          14
+        ],
+        "oversold": [
+          30.0
+        ],
+        "exit_rsi": [
+          50.0,
+          60.0
+        ],
+        "regime": [
+          200
+        ],
+        "stop_pct": [
+          0.1
+        ],
+        "max_hold": [
+          10,
+          20
+        ]
+      },
+      "grid_index": 0,
+      "grid_size": 4
+    },
+    {
+      "id": "real-0005",
+      "kind": "real",
+      "family": "mean_reversion",
+      "universe": "sectors",
+      "tickers": [
+        "XLF",
+        "XLK",
+        "XLE",
+        "XLV",
+        "XLY",
+        "XLI",
+        "XLU",
+        "XLP",
+        "XLB"
+      ],
+      "grid": {
+        "rsi_len": [
+          7
+        ],
+        "oversold": [
+          25.0,
+          35.0
+        ],
+        "exit_rsi": [
+          50.0
+        ],
+        "regime": [
+          100
+        ],
+        "stop_pct": [
+          0.15
+        ],
+        "max_hold": [
+          10
+        ]
+      },
+      "grid_index": 1,
+      "grid_size": 2
+    },
+    {
+      "id": "null-0000",
+      "kind": "null",
+      "family": "mean_reversion",
+      "universe": "broad",
+      "tickers": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "DIA",
+        "VTI",
+        "XLF",
+        "XLK",
+        "XLE",
+        "XLV",
+        "XLY",
+        "XLI",
+        "XLU",
+        "XLP",
+        "XLB",
+        "XLRE",
+        "XLC",
+        "SMH",
+        "SOXX",
+        "GLD",
+        "SLV",
+        "TLT",
+        "HYG",
+        "EEM",
+        "EFA"
+      ],
+      "grid": {
+        "rsi_len": [
+          14
+        ],
+        "oversold": [
+          30.0
+        ],
+        "exit_rsi": [
+          50.0,
+          60.0
+        ],
+        "regime": [
+          200
+        ],
+        "stop_pct": [
+          0.1
+        ],
+        "max_hold": [
+          10,
+          20
+        ]
+      },
+      "grid_index": 0,
+      "grid_size": 4,
+      "null_generator": "block_bootstrap",
+      "null_seed": 4242
+    },
+    {
+      "id": "null-0001",
+      "kind": "null",
+      "family": "mean_reversion",
+      "universe": "broad",
+      "tickers": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "DIA",
+        "VTI",
+        "XLF",
+        "XLK",
+        "XLE",
+        "XLV",
+        "XLY",
+        "XLI",
+        "XLU",
+        "XLP",
+        "XLB",
+        "XLRE",
+        "XLC",
+        "SMH",
+        "SOXX",
+        "GLD",
+        "SLV",
+        "TLT",
+        "HYG",
+        "EEM",
+        "EFA"
+      ],
+      "grid": {
+        "rsi_len": [
+          7
+        ],
+        "oversold": [
+          25.0,
+          35.0
+        ],
+        "exit_rsi": [
+          50.0
+        ],
+        "regime": [
+          100
+        ],
+        "stop_pct": [
+          0.15
+        ],
+        "max_hold": [
+          10
+        ]
+      },
+      "grid_index": 1,
+      "grid_size": 2,
+      "null_generator": "block_bootstrap",
+      "null_seed": 4243
+    },
+    {
+      "id": "null-0002",
+      "kind": "null",
+      "family": "mean_reversion",
+      "universe": "core",
+      "tickers": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "DIA",
+        "VTI"
+      ],
+      "grid": {
+        "rsi_len": [
+          14
+        ],
+        "oversold": [
+          30.0
+        ],
+        "exit_rsi": [
+          50.0,
+          60.0
+        ],
+        "regime": [
+          200
+        ],
+        "stop_pct": [
+          0.1
+        ],
+        "max_hold": [
+          10,
+          20
+        ]
+      },
+      "grid_index": 0,
+      "grid_size": 4,
+      "null_generator": "block_bootstrap",
+      "null_seed": 4244
+    },
+    {
+      "id": "null-0003",
+      "kind": "null",
+      "family": "mean_reversion",
+      "universe": "core",
+      "tickers": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "DIA",
+        "VTI"
+      ],
+      "grid": {
+        "rsi_len": [
+          7
+        ],
+        "oversold": [
+          25.0,
+          35.0
+        ],
+        "exit_rsi": [
+          50.0
+        ],
+        "regime": [
+          100
+        ],
+        "stop_pct": [
+          0.15
+        ],
+        "max_hold": [
+          10
+        ]
+      },
+      "grid_index": 1,
+      "grid_size": 2,
+      "null_generator": "block_bootstrap",
+      "null_seed": 4245
+    },
+    {
+      "id": "null-0004",
+      "kind": "null",
+      "family": "mean_reversion",
+      "universe": "sectors",
+      "tickers": [
+        "XLF",
+        "XLK",
+        "XLE",
+        "XLV",
+        "XLY",
+        "XLI",
+        "XLU",
+        "XLP",
+        "XLB"
+      ],
+      "grid": {
+        "rsi_len": [
+          14
+        ],
+        "oversold": [
+          30.0
+        ],
+        "exit_rsi": [
+          50.0,
+          60.0
+        ],
+        "regime": [
+          200
+        ],
+        "stop_pct": [
+          0.1
+        ],
+        "max_hold": [
+          10,
+          20
+        ]
+      },
+      "grid_index": 0,
+      "grid_size": 4,
+      "null_generator": "block_bootstrap",
+      "null_seed": 4246
+    },
+    {
+      "id": "null-0005",
+      "kind": "null",
+      "family": "mean_reversion",
+      "universe": "sectors",
+      "tickers": [
+        "XLF",
+        "XLK",
+        "XLE",
+        "XLV",
+        "XLY",
+        "XLI",
+        "XLU",
+        "XLP",
+        "XLB"
+      ],
+      "grid": {
+        "rsi_len": [
+          7
+        ],
+        "oversold": [
+          25.0,
+          35.0
+        ],
+        "exit_rsi": [
+          50.0
+        ],
+        "regime": [
+          100
+        ],
+        "stop_pct": [
+          0.15
+        ],
+        "max_hold": [
+          10
+        ]
+      },
+      "grid_index": 1,
+      "grid_size": 2,
+      "null_generator": "block_bootstrap",
+      "null_seed": 4247
+    },
+    {
+      "id": "null-0006",
+      "kind": "null",
+      "family": "mean_reversion",
+      "universe": "broad",
+      "tickers": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "DIA",
+        "VTI",
+        "XLF",
+        "XLK",
+        "XLE",
+        "XLV",
+        "XLY",
+        "XLI",
+        "XLU",
+        "XLP",
+        "XLB",
+        "XLRE",
+        "XLC",
+        "SMH",
+        "SOXX",
+        "GLD",
+        "SLV",
+        "TLT",
+        "HYG",
+        "EEM",
+        "EFA"
+      ],
+      "grid": {
+        "rsi_len": [
+          14
+        ],
+        "oversold": [
+          30.0
+        ],
+        "exit_rsi": [
+          50.0,
+          60.0
+        ],
+        "regime": [
+          200
+        ],
+        "stop_pct": [
+          0.1
+        ],
+        "max_hold": [
+          10,
+          20
+        ]
+      },
+      "grid_index": 0,
+      "grid_size": 4,
+      "null_generator": "block_bootstrap",
+      "null_seed": 4248
+    },
+    {
+      "id": "null-0007",
+      "kind": "null",
+      "family": "mean_reversion",
+      "universe": "broad",
+      "tickers": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "DIA",
+        "VTI",
+        "XLF",
+        "XLK",
+        "XLE",
+        "XLV",
+        "XLY",
+        "XLI",
+        "XLU",
+        "XLP",
+        "XLB",
+        "XLRE",
+        "XLC",
+        "SMH",
+        "SOXX",
+        "GLD",
+        "SLV",
+        "TLT",
+        "HYG",
+        "EEM",
+        "EFA"
+      ],
+      "grid": {
+        "rsi_len": [
+          7
+        ],
+        "oversold": [
+          25.0,
+          35.0
+        ],
+        "exit_rsi": [
+          50.0
+        ],
+        "regime": [
+          100
+        ],
+        "stop_pct": [
+          0.15
+        ],
+        "max_hold": [
+          10
+        ]
+      },
+      "grid_index": 1,
+      "grid_size": 2,
+      "null_generator": "block_bootstrap",
+      "null_seed": 4249
+    },
+    {
+      "id": "null-0008",
+      "kind": "null",
+      "family": "mean_reversion",
+      "universe": "core",
+      "tickers": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "DIA",
+        "VTI"
+      ],
+      "grid": {
+        "rsi_len": [
+          14
+        ],
+        "oversold": [
+          30.0
+        ],
+        "exit_rsi": [
+          50.0,
+          60.0
+        ],
+        "regime": [
+          200
+        ],
+        "stop_pct": [
+          0.1
+        ],
+        "max_hold": [
+          10,
+          20
+        ]
+      },
+      "grid_index": 0,
+      "grid_size": 4,
+      "null_generator": "block_bootstrap",
+      "null_seed": 4250
+    },
+    {
+      "id": "null-0009",
+      "kind": "null",
+      "family": "mean_reversion",
+      "universe": "core",
+      "tickers": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "DIA",
+        "VTI"
+      ],
+      "grid": {
+        "rsi_len": [
+          7
+        ],
+        "oversold": [
+          25.0,
+          35.0
+        ],
+        "exit_rsi": [
+          50.0
+        ],
+        "regime": [
+          100
+        ],
+        "stop_pct": [
+          0.15
+        ],
+        "max_hold": [
+          10
+        ]
+      },
+      "grid_index": 1,
+      "grid_size": 2,
+      "null_generator": "block_bootstrap",
+      "null_seed": 4251
+    },
+    {
+      "id": "null-0010",
+      "kind": "null",
+      "family": "mean_reversion",
+      "universe": "sectors",
+      "tickers": [
+        "XLF",
+        "XLK",
+        "XLE",
+        "XLV",
+        "XLY",
+        "XLI",
+        "XLU",
+        "XLP",
+        "XLB"
+      ],
+      "grid": {
+        "rsi_len": [
+          14
+        ],
+        "oversold": [
+          30.0
+        ],
+        "exit_rsi": [
+          50.0,
+          60.0
+        ],
+        "regime": [
+          200
+        ],
+        "stop_pct": [
+          0.1
+        ],
+        "max_hold": [
+          10,
+          20
+        ]
+      },
+      "grid_index": 0,
+      "grid_size": 4,
+      "null_generator": "block_bootstrap",
+      "null_seed": 4252
+    },
+    {
+      "id": "null-0011",
+      "kind": "null",
+      "family": "mean_reversion",
+      "universe": "sectors",
+      "tickers": [
+        "XLF",
+        "XLK",
+        "XLE",
+        "XLV",
+        "XLY",
+        "XLI",
+        "XLU",
+        "XLP",
+        "XLB"
+      ],
+      "grid": {
+        "rsi_len": [
+          7
+        ],
+        "oversold": [
+          25.0,
+          35.0
+        ],
+        "exit_rsi": [
+          50.0
+        ],
+        "regime": [
+          100
+        ],
+        "stop_pct": [
+          0.15
+        ],
+        "max_hold": [
+          10
+        ]
+      },
+      "grid_index": 1,
+      "grid_size": 2,
+      "null_generator": "block_bootstrap",
+      "null_seed": 4253
+    },
+    {
+      "id": "null-0012",
+      "kind": "null",
+      "family": "mean_reversion",
+      "universe": "broad",
+      "tickers": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "DIA",
+        "VTI",
+        "XLF",
+        "XLK",
+        "XLE",
+        "XLV",
+        "XLY",
+        "XLI",
+        "XLU",
+        "XLP",
+        "XLB",
+        "XLRE",
+        "XLC",
+        "SMH",
+        "SOXX",
+        "GLD",
+        "SLV",
+        "TLT",
+        "HYG",
+        "EEM",
+        "EFA"
+      ],
+      "grid": {
+        "rsi_len": [
+          14
+        ],
+        "oversold": [
+          30.0
+        ],
+        "exit_rsi": [
+          50.0,
+          60.0
+        ],
+        "regime": [
+          200
+        ],
+        "stop_pct": [
+          0.1
+        ],
+        "max_hold": [
+          10,
+          20
+        ]
+      },
+      "grid_index": 0,
+      "grid_size": 4,
+      "null_generator": "block_bootstrap",
+      "null_seed": 4254
+    },
+    {
+      "id": "null-0013",
+      "kind": "null",
+      "family": "mean_reversion",
+      "universe": "broad",
+      "tickers": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "DIA",
+        "VTI",
+        "XLF",
+        "XLK",
+        "XLE",
+        "XLV",
+        "XLY",
+        "XLI",
+        "XLU",
+        "XLP",
+        "XLB",
+        "XLRE",
+        "XLC",
+        "SMH",
+        "SOXX",
+        "GLD",
+        "SLV",
+        "TLT",
+        "HYG",
+        "EEM",
+        "EFA"
+      ],
+      "grid": {
+        "rsi_len": [
+          7
+        ],
+        "oversold": [
+          25.0,
+          35.0
+        ],
+        "exit_rsi": [
+          50.0
+        ],
+        "regime": [
+          100
+        ],
+        "stop_pct": [
+          0.15
+        ],
+        "max_hold": [
+          10
+        ]
+      },
+      "grid_index": 1,
+      "grid_size": 2,
+      "null_generator": "block_bootstrap",
+      "null_seed": 4255
+    },
+    {
+      "id": "null-0014",
+      "kind": "null",
+      "family": "mean_reversion",
+      "universe": "core",
+      "tickers": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "DIA",
+        "VTI"
+      ],
+      "grid": {
+        "rsi_len": [
+          14
+        ],
+        "oversold": [
+          30.0
+        ],
+        "exit_rsi": [
+          50.0,
+          60.0
+        ],
+        "regime": [
+          200
+        ],
+        "stop_pct": [
+          0.1
+        ],
+        "max_hold": [
+          10,
+          20
+        ]
+      },
+      "grid_index": 0,
+      "grid_size": 4,
+      "null_generator": "block_bootstrap",
+      "null_seed": 4256
+    },
+    {
+      "id": "null-0015",
+      "kind": "null",
+      "family": "mean_reversion",
+      "universe": "core",
+      "tickers": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "DIA",
+        "VTI"
+      ],
+      "grid": {
+        "rsi_len": [
+          7
+        ],
+        "oversold": [
+          25.0,
+          35.0
+        ],
+        "exit_rsi": [
+          50.0
+        ],
+        "regime": [
+          100
+        ],
+        "stop_pct": [
+          0.15
+        ],
+        "max_hold": [
+          10
+        ]
+      },
+      "grid_index": 1,
+      "grid_size": 2,
+      "null_generator": "block_bootstrap",
+      "null_seed": 4257
+    },
+    {
+      "id": "null-0016",
+      "kind": "null",
+      "family": "mean_reversion",
+      "universe": "sectors",
+      "tickers": [
+        "XLF",
+        "XLK",
+        "XLE",
+        "XLV",
+        "XLY",
+        "XLI",
+        "XLU",
+        "XLP",
+        "XLB"
+      ],
+      "grid": {
+        "rsi_len": [
+          14
+        ],
+        "oversold": [
+          30.0
+        ],
+        "exit_rsi": [
+          50.0,
+          60.0
+        ],
+        "regime": [
+          200
+        ],
+        "stop_pct": [
+          0.1
+        ],
+        "max_hold": [
+          10,
+          20
+        ]
+      },
+      "grid_index": 0,
+      "grid_size": 4,
+      "null_generator": "block_bootstrap",
+      "null_seed": 4258
+    },
+    {
+      "id": "null-0017",
+      "kind": "null",
+      "family": "mean_reversion",
+      "universe": "sectors",
+      "tickers": [
+        "XLF",
+        "XLK",
+        "XLE",
+        "XLV",
+        "XLY",
+        "XLI",
+        "XLU",
+        "XLP",
+        "XLB"
+      ],
+      "grid": {
+        "rsi_len": [
+          7
+        ],
+        "oversold": [
+          25.0,
+          35.0
+        ],
+        "exit_rsi": [
+          50.0
+        ],
+        "regime": [
+          100
+        ],
+        "stop_pct": [
+          0.15
+        ],
+        "max_hold": [
+          10
+        ]
+      },
+      "grid_index": 1,
+      "grid_size": 2,
+      "null_generator": "block_bootstrap",
+      "null_seed": 4259
+    },
+    {
+      "id": "null-0018",
+      "kind": "null",
+      "family": "mean_reversion",
+      "universe": "broad",
+      "tickers": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "DIA",
+        "VTI",
+        "XLF",
+        "XLK",
+        "XLE",
+        "XLV",
+        "XLY",
+        "XLI",
+        "XLU",
+        "XLP",
+        "XLB",
+        "XLRE",
+        "XLC",
+        "SMH",
+        "SOXX",
+        "GLD",
+        "SLV",
+        "TLT",
+        "HYG",
+        "EEM",
+        "EFA"
+      ],
+      "grid": {
+        "rsi_len": [
+          14
+        ],
+        "oversold": [
+          30.0
+        ],
+        "exit_rsi": [
+          50.0,
+          60.0
+        ],
+        "regime": [
+          200
+        ],
+        "stop_pct": [
+          0.1
+        ],
+        "max_hold": [
+          10,
+          20
+        ]
+      },
+      "grid_index": 0,
+      "grid_size": 4,
+      "null_generator": "block_bootstrap",
+      "null_seed": 4260
+    },
+    {
+      "id": "null-0019",
+      "kind": "null",
+      "family": "mean_reversion",
+      "universe": "broad",
+      "tickers": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "DIA",
+        "VTI",
+        "XLF",
+        "XLK",
+        "XLE",
+        "XLV",
+        "XLY",
+        "XLI",
+        "XLU",
+        "XLP",
+        "XLB",
+        "XLRE",
+        "XLC",
+        "SMH",
+        "SOXX",
+        "GLD",
+        "SLV",
+        "TLT",
+        "HYG",
+        "EEM",
+        "EFA"
+      ],
+      "grid": {
+        "rsi_len": [
+          7
+        ],
+        "oversold": [
+          25.0,
+          35.0
+        ],
+        "exit_rsi": [
+          50.0
+        ],
+        "regime": [
+          100
+        ],
+        "stop_pct": [
+          0.15
+        ],
+        "max_hold": [
+          10
+        ]
+      },
+      "grid_index": 1,
+      "grid_size": 2,
+      "null_generator": "block_bootstrap",
+      "null_seed": 4261
+    },
+    {
+      "id": "null-0020",
+      "kind": "null",
+      "family": "mean_reversion",
+      "universe": "core",
+      "tickers": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "DIA",
+        "VTI"
+      ],
+      "grid": {
+        "rsi_len": [
+          14
+        ],
+        "oversold": [
+          30.0
+        ],
+        "exit_rsi": [
+          50.0,
+          60.0
+        ],
+        "regime": [
+          200
+        ],
+        "stop_pct": [
+          0.1
+        ],
+        "max_hold": [
+          10,
+          20
+        ]
+      },
+      "grid_index": 0,
+      "grid_size": 4,
+      "null_generator": "block_bootstrap",
+      "null_seed": 4262
+    },
+    {
+      "id": "null-0021",
+      "kind": "null",
+      "family": "mean_reversion",
+      "universe": "core",
+      "tickers": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "DIA",
+        "VTI"
+      ],
+      "grid": {
+        "rsi_len": [
+          7
+        ],
+        "oversold": [
+          25.0,
+          35.0
+        ],
+        "exit_rsi": [
+          50.0
+        ],
+        "regime": [
+          100
+        ],
+        "stop_pct": [
+          0.15
+        ],
+        "max_hold": [
+          10
+        ]
+      },
+      "grid_index": 1,
+      "grid_size": 2,
+      "null_generator": "block_bootstrap",
+      "null_seed": 4263
+    },
+    {
+      "id": "null-0022",
+      "kind": "null",
+      "family": "mean_reversion",
+      "universe": "sectors",
+      "tickers": [
+        "XLF",
+        "XLK",
+        "XLE",
+        "XLV",
+        "XLY",
+        "XLI",
+        "XLU",
+        "XLP",
+        "XLB"
+      ],
+      "grid": {
+        "rsi_len": [
+          14
+        ],
+        "oversold": [
+          30.0
+        ],
+        "exit_rsi": [
+          50.0,
+          60.0
+        ],
+        "regime": [
+          200
+        ],
+        "stop_pct": [
+          0.1
+        ],
+        "max_hold": [
+          10,
+          20
+        ]
+      },
+      "grid_index": 0,
+      "grid_size": 4,
+      "null_generator": "block_bootstrap",
+      "null_seed": 4264
+    },
+    {
+      "id": "null-0023",
+      "kind": "null",
+      "family": "mean_reversion",
+      "universe": "sectors",
+      "tickers": [
+        "XLF",
+        "XLK",
+        "XLE",
+        "XLV",
+        "XLY",
+        "XLI",
+        "XLU",
+        "XLP",
+        "XLB"
+      ],
+      "grid": {
+        "rsi_len": [
+          7
+        ],
+        "oversold": [
+          25.0,
+          35.0
+        ],
+        "exit_rsi": [
+          50.0
+        ],
+        "regime": [
+          100
+        ],
+        "stop_pct": [
+          0.15
+        ],
+        "max_hold": [
+          10
+        ]
+      },
+      "grid_index": 1,
+      "grid_size": 2,
+      "null_generator": "block_bootstrap",
+      "null_seed": 4265
+    },
+    {
+      "id": "null-0024",
+      "kind": "null",
+      "family": "mean_reversion",
+      "universe": "broad",
+      "tickers": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "DIA",
+        "VTI",
+        "XLF",
+        "XLK",
+        "XLE",
+        "XLV",
+        "XLY",
+        "XLI",
+        "XLU",
+        "XLP",
+        "XLB",
+        "XLRE",
+        "XLC",
+        "SMH",
+        "SOXX",
+        "GLD",
+        "SLV",
+        "TLT",
+        "HYG",
+        "EEM",
+        "EFA"
+      ],
+      "grid": {
+        "rsi_len": [
+          14
+        ],
+        "oversold": [
+          30.0
+        ],
+        "exit_rsi": [
+          50.0,
+          60.0
+        ],
+        "regime": [
+          200
+        ],
+        "stop_pct": [
+          0.1
+        ],
+        "max_hold": [
+          10,
+          20
+        ]
+      },
+      "grid_index": 0,
+      "grid_size": 4,
+      "null_generator": "block_bootstrap",
+      "null_seed": 4266
+    },
+    {
+      "id": "null-0025",
+      "kind": "null",
+      "family": "mean_reversion",
+      "universe": "broad",
+      "tickers": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "DIA",
+        "VTI",
+        "XLF",
+        "XLK",
+        "XLE",
+        "XLV",
+        "XLY",
+        "XLI",
+        "XLU",
+        "XLP",
+        "XLB",
+        "XLRE",
+        "XLC",
+        "SMH",
+        "SOXX",
+        "GLD",
+        "SLV",
+        "TLT",
+        "HYG",
+        "EEM",
+        "EFA"
+      ],
+      "grid": {
+        "rsi_len": [
+          7
+        ],
+        "oversold": [
+          25.0,
+          35.0
+        ],
+        "exit_rsi": [
+          50.0
+        ],
+        "regime": [
+          100
+        ],
+        "stop_pct": [
+          0.15
+        ],
+        "max_hold": [
+          10
+        ]
+      },
+      "grid_index": 1,
+      "grid_size": 2,
+      "null_generator": "block_bootstrap",
+      "null_seed": 4267
+    },
+    {
+      "id": "null-0026",
+      "kind": "null",
+      "family": "mean_reversion",
+      "universe": "core",
+      "tickers": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "DIA",
+        "VTI"
+      ],
+      "grid": {
+        "rsi_len": [
+          14
+        ],
+        "oversold": [
+          30.0
+        ],
+        "exit_rsi": [
+          50.0,
+          60.0
+        ],
+        "regime": [
+          200
+        ],
+        "stop_pct": [
+          0.1
+        ],
+        "max_hold": [
+          10,
+          20
+        ]
+      },
+      "grid_index": 0,
+      "grid_size": 4,
+      "null_generator": "block_bootstrap",
+      "null_seed": 4268
+    },
+    {
+      "id": "null-0027",
+      "kind": "null",
+      "family": "mean_reversion",
+      "universe": "core",
+      "tickers": [
+        "SPY",
+        "QQQ",
+        "IWM",
+        "DIA",
+        "VTI"
+      ],
+      "grid": {
+        "rsi_len": [
+          7
+        ],
+        "oversold": [
+          25.0,
+          35.0
+        ],
+        "exit_rsi": [
+          50.0
+        ],
+        "regime": [
+          100
+        ],
+        "stop_pct": [
+          0.15
+        ],
+        "max_hold": [
+          10
+        ]
+      },
+      "grid_index": 1,
+      "grid_size": 2,
+      "null_generator": "block_bootstrap",
+      "null_seed": 4269
+    },
+    {
+      "id": "null-0028",
+      "kind": "null",
+      "family": "mean_reversion",
+      "universe": "sectors",
+      "tickers": [
+        "XLF",
+        "XLK",
+        "XLE",
+        "XLV",
+        "XLY",
+        "XLI",
+        "XLU",
+        "XLP",
+        "XLB"
+      ],
+      "grid": {
+        "rsi_len": [
+          14
+        ],
+        "oversold": [
+          30.0
+        ],
+        "exit_rsi": [
+          50.0,
+          60.0
+        ],
+        "regime": [
+          200
+        ],
+        "stop_pct": [
+          0.1
+        ],
+        "max_hold": [
+          10,
+          20
+        ]
+      },
+      "grid_index": 0,
+      "grid_size": 4,
+      "null_generator": "block_bootstrap",
+      "null_seed": 4270
+    },
+    {
+      "id": "null-0029",
+      "kind": "null",
+      "family": "mean_reversion",
+      "universe": "sectors",
+      "tickers": [
+        "XLF",
+        "XLK",
+        "XLE",
+        "XLV",
+        "XLY",
+        "XLI",
+        "XLU",
+        "XLP",
+        "XLB"
+      ],
+      "grid": {
+        "rsi_len": [
+          7
+        ],
+        "oversold": [
+          25.0,
+          35.0
+        ],
+        "exit_rsi": [
+          50.0
+        ],
+        "regime": [
+          100
+        ],
+        "stop_pct": [
+          0.15
+        ],
+        "max_hold": [
+          10
+        ]
+      },
+      "grid_index": 1,
+      "grid_size": 2,
+      "null_generator": "block_bootstrap",
+      "null_seed": 4271
+    }
+  ]
+}

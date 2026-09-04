@@ -75,7 +75,7 @@ def build():
     return {
         "schema": SCHEMA,
         "register": "The Null Register",
-        "description": "Research that did not work, published with the same care "
+        "description": "Things traders repeat, measured. Research that did not work, published with the same care "
                        "as research that did.",
         "repository": "https://github.com/Themis-Foundry/null-register",
         "license": "See LICENSE. Sources are public filings and public APIs.",

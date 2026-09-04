@@ -37,4 +37,25 @@ gap = nums != list(range(1, n + 1))
 print(f"  {'FAIL' if gap else 'PASS'}  numbering is 1..{n} with no gaps or repeats")
 sys.exit(1 if gap else 0)
 PY
+# The front page carries a verdict counter (never worked / stopped working / works only
+# when / could not tell). Each entry declares its verdicts on lines of the form
+# `verdict: NEVER WORKED — <belief>`. Those lines are counted here and compared with
+# the counter on the front page, so the counter cannot drift from the entries.
+python3 - <<'PY' || rc=$?
+import re, sys, glob
+labels = ["NEVER WORKED", "STOPPED WORKING", "WORKS ONLY WHEN", "COULD NOT TELL"]
+found = {l: 0 for l in labels}
+for f in sorted(glob.glob("entries/*/README.md")):
+    for m in re.finditer(r"^verdict:\s*(NEVER WORKED|STOPPED WORKING|WORKS ONLY WHEN|COULD NOT TELL)\b", open(f).read(), re.M):
+        found[m.group(1)] += 1
+readme = open("README.md").read()
+m = re.search(r"(\d+) beliefs tested · (\d+) never worked · (\d+) stopped working · (\d+) work only when · (\d+) could not tell", readme)
+if not m:
+    print("  FAIL  the front page has no verdict counter line"); sys.exit(1)
+want = [sum(found.values())] + [found[l] for l in labels]
+got = [int(x) for x in m.groups()]
+ok = got == want
+print(f"  {'PASS' if ok else 'FAIL'}  verdict counter: entries declare {want}, front page says {got}")
+sys.exit(0 if ok else 1)
+PY
 exit $rc

@@ -3,6 +3,8 @@
 **119 SEC tender offers read one filing at a time, published with the 14 cases where the
 strategy did not work, and with the 91 qualifying offers this census does not reach.**
 
+verdict: WORKS ONLY WHEN — the offer is oversubscribed, which the filings can show between 33.9% and 77.4% of the time
+
 ---
 
 ### If you have never heard of any of this, start here

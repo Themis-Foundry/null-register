@@ -3,6 +3,8 @@
 **A public leaderboard of 43,141 crypto traders, and a control that shows its top
 performers are mostly just its biggest wallets.**
 
+verdict: COULD NOT TELL — copy the top of the leaderboard (eight defensible methods disagree about the sign; the ranking is mostly wallet size)
+
 ---
 
 ![Four rankings of the same 42,850 wallets over the same nine days. Ranked by last week's dollars, 88.6% are profitable again; ranked by account size alone, which contains no performance information, 83.8%; ranked by percent return, 64.5%; the whole board, 52.8%](diagram.svg)

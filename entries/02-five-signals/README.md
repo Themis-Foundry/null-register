@@ -4,6 +4,12 @@
 the whole cohort rather than a chosen slice. One of them worked and then stopped.
 The other four were never there.**
 
+verdict: NEVER WORKED — buy when insiders buy (24,021 events; random dates beat the real ones)
+verdict: NEVER WORKED — buy the buyback announcement (placebo p 0.725)
+verdict: NEVER WORKED — buy the S&P 500 deletion (neither era clears zero; the eras differ, see correction 10)
+verdict: NEVER WORKED — fade extreme funding rates
+verdict: NEVER WORKED — sell into a rights offering
+
 ---
 
 ![Return against the market for each signal, with a 95% interval drawn. Four of the five bars have an interval crossing zero. The S&P deletion rebound is far to the right for 2016 to 2020 and to the left of zero for 2021 to 2026](diagram.svg)
