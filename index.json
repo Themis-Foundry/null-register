@@ -18,8 +18,8 @@
         {
           "name": "edgar_oddlot_offers_2016_2026.jsonl",
           "path": "entries/01-oddlot-census/data/edgar_oddlot_offers_2016_2026.jsonl",
-          "bytes": 256662,
-          "sha256": "d38a060fc3cc97d7a77078b1a8760356281b1ddaf7b01728b8e7d2df2da031b7"
+          "bytes": 421118,
+          "sha256": "2b07c45d0d51c24548b5e284294b83acc21a22ecb6094761144c6c6149588645"
         },
         {
           "name": "oddlot_census_119.csv",

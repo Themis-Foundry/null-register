@@ -37,6 +37,10 @@ This is a denominator, stated honestly:
 - The EDGAR sweep found **372** tender offers carrying odd-lot language, 2016 to 2026.
 - **210** of those are operating-company offers that actually carry the preference. The rest
   are closed-end funds tendering at net asset value, or offers with no odd-lot provision.
+  Each of the 372 rows in the shipped EDGAR file now carries `is_fund`, `odd_lot_preference`
+  and the sentence the preference was read from, and `verify.py` recounts the 210 from them.
+  Until 2026-09-04 this figure was a hand count the shipped rows could not reproduce, which
+  an independent audit noticed and this entry's own checker had not.
 - **This census covers 119 of the 210**, spanning 2016-01-13 to 2025-07-10.
 
 ⚠ **It is not a complete count and the gap is not random.** The census was restricted to offers

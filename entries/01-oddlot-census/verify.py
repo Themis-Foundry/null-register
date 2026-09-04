@@ -22,6 +22,7 @@ pass it has not earned.
 import json, sys, re, html, time, pathlib, urllib.request, urllib.error
 
 DATA = pathlib.Path(__file__).parent / "data" / "oddlot_census_119.json"
+EDGAR = pathlib.Path(__file__).parent / "data" / "edgar_oddlot_offers_2016_2026.jsonl"
 UA = "The Null Register — dataset verification — replace-with-your-email@example.com"
 
 # ── the figures as published, asserted here so a drift shows up as a failure ──
@@ -38,6 +39,12 @@ PUBLISHED = {
     # their reference share count, but are dollar-denominated and have no share target.
     "bought above stated target":    1,
     "carrying a proration factor":  18,
+    # the denominator: of 372 EDGAR hits, the operating-company offers that carry the
+    # preference. A hand count until 2026-09-04, when an independent audit noted the
+    # shipped rows could not reproduce it. The two fields that do ship now.
+    "EDGAR offers swept":            372,
+    "operating-company, preference": 210,
+    "census offers inside the 210":  119,
 }
 PUBLISHED_BAND = (33.9, 77.4)
 
@@ -108,6 +115,21 @@ def main():
     print(f"  {DIM}lower bound treats all {tally.get('undetermined',0)} undetermined as not "
           f"oversubscribed; upper bound treats them all as oversubscribed{OFF}")
 
+    print("\nTHE DENOMINATOR, RECOMPUTED FROM THE EDGAR SWEEP")
+    edgar = [json.loads(l) for l in open(EDGAR) if l.strip()]
+    check("EDGAR offers swept", len(edgar), PUBLISHED["EDGAR offers swept"])
+    operating = [e for e in edgar if not e.get("is_fund") and e.get("odd_lot_preference")]
+    check("operating-company, preference", len(operating), PUBLISHED["operating-company, preference"])
+    op_keys = {(e["cik"], e["date"]) for e in operating}
+    def cik_of(row):
+        m = re.search(r"CIK (\d+)", row.get("company", ""))
+        return m.group(1) if m else None
+    inside = sum(1 for r in rows if (cik_of(r), r["date"]) in op_keys)
+    check("census offers inside the 210", inside, PUBLISHED["census offers inside the 210"])
+    print(f"  {DIM}every operating row carries the odd-lot sentence it was read from "
+          f"(preference_quote); {sum(1 for e in operating if e.get('preference_quote'))} of "
+          f"{len(operating)} do{OFF}")
+
     print("\nTHE CAVEATS, ALSO RECOMPUTED")
     upsized = [r for r in rows if r.get("shares_accepted") and r.get("shares_sought")
                and r["shares_accepted"] > r["shares_sought"]]
@@ -160,8 +182,12 @@ def main():
     corrupted = q[:40] + "X" + q[41:]
     other = normalise(classified[3]["evidence_quote"])
     haystack = q                                    # stand-in for the document
+    flipped = [dict(e) for e in operating]
+    flipped[0]["odd_lot_preference"] = False
+    n_flipped = sum(1 for e in flipped if not e.get("is_fund") and e.get("odd_lot_preference"))
     controls = [
         ("real quote matches itself",            q in haystack,          True),
+        ("one flipped preference moves the 210", n_flipped == PUBLISHED["operating-company, preference"], False),
         ("one character changed is rejected",    corrupted in haystack,  False),
         ("a different filing's quote rejected",  other in haystack,      False),
     ]
