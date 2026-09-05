@@ -23,7 +23,8 @@ import json, sys, re, html, time, pathlib, urllib.request, urllib.error
 
 DATA = pathlib.Path(__file__).parent / "data" / "oddlot_census_119.json"
 EDGAR = pathlib.Path(__file__).parent / "data" / "edgar_oddlot_offers_2016_2026.jsonl"
-UA = "The Null Register — dataset verification — replace-with-your-email@example.com"
+import os
+UA = os.environ.get("SEC_UA", "The Null Register — dataset verification — replace-with-your-email@example.com")
 
 # ── the figures as published, asserted here so a drift shows up as a failure ──
 PUBLISHED = {
@@ -174,6 +175,28 @@ def main():
         print(f"  {GREEN}{good}{OFF} verbatim · {RED}{bad}{OFF} mismatched · {err} unreachable")
         if err:
             print(f"  {DIM}unreachable rows are not passes. Re-run before trusting a clean sheet.{OFF}")
+
+        # The proration sentences were never bound by anything until an independent
+        # audit fetched all 44 on 2026-09-04 and found every one verbatim. That check
+        # lives here now, so the next drift is caught by this file and not by luck.
+        print("\nCLAIM BINDING — the proration sentences, same filings")
+        pro = [r for r in rows if r.get("proration_quote")]
+        pgood = pbad = perr = 0
+        for r in pro:
+            try:
+                req = urllib.request.Request(r["evidence_url"], headers={"User-Agent": UA})
+                doc = normalise(urllib.request.urlopen(req, timeout=45).read().decode("utf-8", "ignore"))
+                if normalise(r["proration_quote"]) in doc:
+                    pgood += 1
+                else:
+                    pbad += 1
+                    print(f"  {RED}FAIL{OFF}  {r['ticker']} — proration sentence is not in the cited document")
+                    fails.append(f"proration binding: {r['ticker']}")
+                time.sleep(1.1)
+            except Exception as e:
+                perr += 1
+                print(f"  {DIM}SKIP{OFF}  {r['ticker']} — {type(e).__name__}")
+        print(f"  {GREEN}{pgood}{OFF} verbatim · {RED}{pbad}{OFF} mismatched · {perr} unreachable  (of {len(pro)})")
 
     # ── negative control: the checks above are worthless if they cannot fail ──
     print("\nNEGATIVE CONTROL — the checker must be able to say no")

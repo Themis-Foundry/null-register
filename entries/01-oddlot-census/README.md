@@ -128,6 +128,13 @@ data/edgar_oddlot_offers_2016_2026.jsonl
 verify.py / reproduce.sh       regenerate and check every published figure
 ```
 
+## Checked from outside, once
+
+On 2026-09-04 an independent audit on a different engine, with its own fetch and its own
+normaliser, pulled all 35 classified passages and all 44 proration sentences from sec.gov and
+found every one verbatim in the filing it cites. The proration sentences had never been bound by
+anything before that day; `verify.py --claims` binds them now.
+
 ## Corrections are welcome and are the most useful thing you can send
 
 If you find an error in a row, that is worth more to this project than a star. Open an issue with
